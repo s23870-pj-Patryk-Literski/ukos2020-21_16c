@@ -1,1 +1,13 @@
+Zad.1 Komenda ls zwraca na terminal liste katalogów i plików w danej lokalizacji.
+Zad.2 Komenda pwd zwraca informacje w jakim katalogu sie znajdujesz.
+Zad.3 Komenda cd /home przenosi użytkownika do katalogu home bez wzgledu na to gdzie sie znajduje.
+Zad.4 Komenda cd przenosi użytkownika w daną lokalizacje.
+Zad.5 Komenda pwd w katalogu home informuje mnie że znajduje sie w katalogu home.
+Zad.6 Komenda ls zwraca na terminal liste katalogów domowych wszystkich użytkowników.
+Zad.7 Wykonanie komendy cd w katalogu home cofa użytkownika do katalogu domowego.
+Zad.8 Wykonanie komendy cd Pictures(obrazy) przeniesie mnie do katalogu Pictures.
+Zad.9 Wykonanie komendy pwd w katalogu Pictures pokazuje użytkownikowi gdzie zjaduje sie katalog Pictures.
+Zad.10 Wpisując komende ././././././ użytkownikowi wyskakuje " bash: ././././././: Is a directory "
+Zad.11 Katalog /root jest katalogiem domowym użytkownika root.
+
 
