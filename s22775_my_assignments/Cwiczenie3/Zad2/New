@@ -1,0 +1,10 @@
+Przykierowanie plików
+naprzykład mamy plik który się nazywa NORD (on jest pusty) 
+możemy naprzydład do tego pliku przekierować za pomocą polecenia echo "Ala ma kota" > NORD
+sprawdzimy less NORD, tam muszę być "Ala ma kota"
+A jak chcemy zrobić przekierowanie z dopisaniem to echo "Którego ona bardzo lubi" >> NORD
+Teraz przekierowanie blądów za pomocą 2>
+Użyjemy komęde find / -maxdepth 2 -type d > NORD 2> Lurs 
+I w pliku Lurs muszą być przekierowane blędy, przez to że komęda find nie ma uprawnień wejdź do niektórych katalogów
+Sprawdzimy less Lurs 
+Możemy jeszcze wszytko przekierować do jednego pliku find / -maxdepth 2 -type d > NORD 2>&1

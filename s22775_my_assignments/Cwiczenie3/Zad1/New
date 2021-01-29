@@ -1,0 +1,5 @@
+Na początek urochomił Terminal i napisałem komende ps aux dla wyświetlenia procesów
+Za pomocą komendy grep przefiltrowałem procesy i znalazł ten który potrzebuję,
+niech to będzie ubuntu ps aux | grep bash i my będziemy mieć jeden process bash i polecenie które zazwiera słowo bash
+Żeby wyświetlić procesy konkretnego użytkownika można użyć ps -F -u root i nam wyświetli tylko te procesy które należą do użytkownika root
+
