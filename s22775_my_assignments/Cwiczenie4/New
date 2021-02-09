@@ -1,0 +1,9 @@
+1)Z początku ćwiczenia wpisałem komende która wykonuję o wiele skryptów, dla uruchomiania tej komendy potrzebuwałem wejść do PowerShella z prawami administratora(Set - ExecutionPlicy Bypass).
+2)Dla pomocy jakieś kolwiek komendy wpisujecie Get - Help (nazwa_komendy). Ale jak nie będzie działacz to na pomóc przyjdzie komenda (Get-Help get-help --online).
+3)Dla tego żeby nie uszkodzić systemu liepiej uruchomić PowerShell na poziomie użytkownika.
+4)Za pomocą tej komędy zwróciłem wszystkie dostępny w tej chwili moduły(Get-Module -ListAvailable).
+5)Za pomocą $job = Start - BitsTranfer -Source ... pobrałem plik z szuflandii.
+6)&(call) - to jest operator wołania. Na przykład &C:\Windows\notepad.exe zawoła notatnik.
+7)Żeby wylistowacz wszystkie dyski PowerShella można wpisać (Get-PSdrive)
+8)Na sprawdzanie czasu wykonywania polecenia(Measure-ComCmand{polecenie})
+9)Wmi służy do zarządzania systemem.
