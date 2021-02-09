@@ -1,0 +1,42 @@
+1 Jestem w katalogu kota. Jak przejść do katalogu ale?
+  ścieżka względna: cd ../../../kot/ma/ale
+  scieżka bezwzględna: cd /home/ubuntu/kropa/kot/ma/ale
+
+
+2 Jak utworzyć poddrzewo katalogów jan/kowalski w katalogu ale za pomocą jednej komendy ?
+  mkdir -p /home/ubuntu/kropa/kot/ma/ale/jan/kowalski
+
+
+3 Jak przeniesć katalog ale do katalogu i ?
+  mv /home/ubuntu/kropa/kot/ma/ale /home/ubuntu/kropa/ala/i
+
+
+4 Jak program zamknąć, który nie reaguje na ctrl+c ?
+  Można użyć do tego komedy kill
+
+
+5 Jak wypisać wszystkie pliki w bieżącym katalogu, które zaczynają się od al ?
+  ls -la | grep al
+
+
+6 Nadaj uprawienia do katalogu ala tak aby: każdy mógł do niego wejść, tylko grupa mogła wyściwtlic co w nim jest, własciciel ma pełne prawa.
+  notacja ósemkowa: chmod 751 ala
+  notacja symboliczna: chmod u=rwx,g=r,o=x ala
+
+
+7 Jak utworzyć plik z listą plików  w bieżącym katalogu ?
+  ls -la > plik
+
+
+8 Nie można utworzyć żadnego pliku na koncie uczelnianym. Co sie mogło stać ?
+  Nie ma miejsca na dysku na stworzenie pliku.
+ Zostało odebrane prawo do zapisu pliku.
+
+
+9 Jak przyspieszyć wpisywanie komend w terminalu ?
+Przy użyciu strzałki w górę można wstawić wcześniej użyte komendy
+
+10 Uruchomić program by nie blokował terminala ?
+1. Wpisać nazwę programu i &
+2. Uruchomić terminal zatrzymać go przy użyciu ctrl+z  i użyć polecenia bg zeby działał w tle
+ 

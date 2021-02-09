@@ -1,5 +1,3 @@
-2020.10.25
-My dear diary
 Today i use bash to do this request
 I learnt some commands
 i had problems with tree " tree command not foun" but i resolved it
@@ -20,4 +18,12 @@ after did this exercises i see progress in using linux.
 In my opinon I should more pratice with chmod, beacuse somtimes I am getting lost with it.
 Later I use echo and tail -f plik in two terminals two send message.
 I log in to szuflandia and i created catalog public_html with file storna.html.
-On my web I saw inscription "to jest moja strona domowa"    
+On my web I saw inscription "to jest moja strona domowa"
+
+2020.11.27
+I use command ls -a | grep D. After it I  saw directores which starts on letter D.
+Command kill is using to completion of the process. Kill 1750 closed Text Editor.
+I wrote killall firefox to close internet web. 
+gedit & opened Text Editor.I used ctrl+z, but program didnt stopped working.
+Jobs shows programs which working in background 
+ 
