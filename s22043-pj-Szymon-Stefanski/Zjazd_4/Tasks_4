@@ -1,0 +1,102 @@
+Task 1
+You have a tree:
+.
+├── ala
+│   ├── i
+│   │   └── as
+│   └── ma
+│       └── kota
+└── kot
+    └── ma
+        └── ale
+
+You are in "kota" directory. Directory "ala" is in directory "/tmp/ukos"
+How to move to directory "ale" by using:
+
+a) Absolute path:
+
+I use command:
+cd /tmp/ukos/kot/ma/ale
+
+
+b) Relative path:
+
+I use command:
+cd ../../../kot/ma/ale
+
+
+Task 2
+You have that same directories layout and you are still in "kota" directory.
+How to create diretories subtree "jan/kowalski" in "ale" directory by using
+single command?
+
+I use command:
+mkdir -p /tmp/ukos/kot/ma/ale/jan/kowalski
+
+Task 3
+You have that same directories layout and you are still in "kota" directory.
+How to move directory "ale" to directory "i"
+
+I use command:
+mv /tmp/ukos/kot/ma/ale/ /tmp/ukos/ala/i
+
+Task 4
+How to close program, which doesn't respond
+and you can't use ctrl+c command
+
+You can check process ID(PID) of this program and kill it
+by using command:
+
+ps aux (to check list of processes)
+
+kill 1078 (for example: I close firefox)
+
+Task 5
+How to list all files in current directory which names
+starts from "al"?
+
+I use command:
+tree | grep al
+
+Task 6
+Give permissions to "ala" directory so that:
+- everyone can enter there,
+- only group can display what is there,
+- only owner have full rights,
+
+a) Octal numbering:
+
+I use command:
+chmod 741 ala
+
+
+b) Symbolic numbering:
+
+I use command:
+chmod u=rwx,g=r,o=x ala
+
+Task 7
+How to create file with list of files in current directory?
+
+I use commands:
+tree > plik
+cat plik
+
+Task 8
+You can't creat any file in your univeristy account. What can happend?
+Name two options.
+
+Mr. Tomasz said it was an old task and we can skip it.
+But if I think about it I think about:
+a) There was error in university servers.
+b) There was hacker attack on univeristy servers(like that from December).
+
+Task 9
+How to speed up typing of commands(what key allows for commands completion)?
+I think "TAB" key allows for commands completion.
+
+Task 10
+How to start program and don't block terminal:
+
+I think when program was stoped we should use bg command and write name of
+program and key "&".
