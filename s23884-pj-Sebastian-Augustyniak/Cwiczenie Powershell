@@ -1,0 +1,38 @@
+Zaczynamy Powershell 
+Powershell jest trochę ciezki ale da rade zrozumiec. 
+
+1. Z poczatku uruchomilem powershella z prawami administratora wpisalem  komende 
+set-executionpolicy bypass zeby bylo wykonywanie wszystkich skryptow  
+nie bedzie wyskakiwal dzieki temu nie bedzie ostrzezen. 
+
+2.Urochomilem  powershella z poziomu uzytkownika zeby nie uszczkodzic calego systemu
+
+3.Nastepnie pobralem plik z szuflandi ktora sie nazywa sie lubuntu przez komende 
+start-bitsTransfer
+
+4.Potem  Byly listy za pomoca komendy get-module a listavailable jest dodatkiem 
+Zrozumialem ze ? jest skrotem Where-Object tak jak % jest skrotem na while-object 
+czyli petle 
+
+5. Poleceniem get-module pobralem moduly ktore sa zainstalowane na komputerze 
+komedna get-module -listAvailable | ? {$_.Version -ge "2.0.0.0"} zwroci tylko te moduly
+ktorych wersja jest >=2.0.0.0
+
+6.Dowiedzialem sie ze komenda Get-BitsTransfer sluzy do sprawdzenia jaki jest stan transferu
+
+7.Fajna komenda tez jest sprawdzenie czasu czyli Measure-ComCmand {get-childitem -path C:\\Windows}
+pokazuje nam status czasowy 
+
+8.PS jest to jezyk ktory sluzy do pisania skryptow ale to tez jest konsola w ktorej mozna uruchomic inne programy 
+notatnik Za pomoca operatora call czyli & "& C:\Windows\notepad.exe
+
+9.Mialem troche problem z rejestrami z uwagi na to ze nie chcialy dzialac komendy ale s
+posiedzialem przy tym dluzej wynioslem inofrmacji z internetu i pomoglo 
+
+10 Komedna Wmi sluzy do zarzadanie systemem 
+
+11.Komedna Get-PSDrive mozemy wylistowac dyski jakie sa na powershellu 
+oraz Dyski HKML i HKCU to dyski dajace dostep do rejestru 
+
+Podsumowojac Powershell fajna rzecz ale zeby zrozumiec wszystkie komendy trzeba
+duzo robic .
