@@ -1,0 +1,15 @@
+1 Uruchamiam powershella z uprawieniami administratora.
+  Następnie używam komendy Set-ExecutionPolicy Bypass. Po użyciu tej komedny jako zwykły użytkownik mogę korzystać ze skryptów.
+  
+2 Użyłem komendy Get-ExecutionPolicy w celcu sprawdzenia ExecutionPolicy, otrzymałem Bypass.
+
+3 Za pomocą komendy Get-Module -ListaAvaible i podania ścieżki do pliku udało mi sie zapisać listę poleceń do podanego pliku.
+
+4 Obraz maszyny wirtualnej z szuflandi pobierał się 43 minuty i 52 sekundy .
+
+5 Użyłem start-bitstransfer do pobrania obrazu z internetu, tylko nie mogłem zmierzyć czasu pobierania obrazu.
+ Poprawka jednak sie udało Measure-command, a potem cała komenda do transferu w nawiasie klamrowym.
+
+6 Call=& użyłem tego polecenia do opalenia notatnika, właczączyłem też excela.
+
+7 Get-PSDrive mogę wyświetlić listę dysków. 
