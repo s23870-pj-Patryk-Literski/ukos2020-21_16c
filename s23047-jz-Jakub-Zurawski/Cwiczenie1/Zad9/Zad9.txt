@@ -1,0 +1,1 @@
+Uzywamy komendy "cd Obrazy"(sciezka wzgledna)

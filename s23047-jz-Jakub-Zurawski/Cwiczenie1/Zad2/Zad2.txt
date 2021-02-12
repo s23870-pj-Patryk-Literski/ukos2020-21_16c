@@ -1,0 +1,1 @@
+Zawartosc katalogu wyswietlamy za pomoca komendy "ls"
