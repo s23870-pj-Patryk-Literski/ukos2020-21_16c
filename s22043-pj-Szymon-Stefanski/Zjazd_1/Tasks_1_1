@@ -1,0 +1,75 @@
+2020.10.25
+Task 1
+Start the terminal
+
+I start's the terminal from users menu in system.
+
+Task 2
+Display contents of current directory
+
+I use command: ls
+
+Task 3
+Check where you are at the moment, compare it with the graphical interface
+
+I use command: pwd
+
+I'm on /home/ubuntu - it's true, because I only enter terminal.
+
+Task 4
+Go to the desktop directory using the relative path
+
+I use command : cd Desktop
+
+Task 5
+Check where you are
+
+I use command : pwd
+
+I'm on /home/ubuntu/Desktop
+
+Task 6
+Display contents of current directory
+
+I use command : ls
+
+Task 7  
+See if by going to this directory by using graphical interface we'll get the same result
+
+Yes, when we are desktop we see that same files.
+
+Task 8
+Display the contents of your home directory without going there
+
+I use command : ls /home
+
+Task 9
+Go to the "Pictures" directory in your home directory by using the relative path
+
+I use command : cd Pictures
+
+Task 10
+Check where you are
+
+I use command : pwd
+
+Task 11
+See which directory you will go to with path ././././././
+
+I'm just in that same directory
+
+Task 12
+Go to your home directory with the absolute path
+
+I use command : cd/home
+
+Task 13
+See what happends when you write command cd /root. When you do this thinks about what happend.
+
+I see text on my screen "bash: cd: /root: Permission denied" - propably I only can enter there with
+administrator permissions
+
+Task 14
+See what happends if you press CTRL+ALT+F1
+
+I was log out.

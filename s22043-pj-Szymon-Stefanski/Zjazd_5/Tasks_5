@@ -1,0 +1,42 @@
+Tasks:
+
+Text editors:
+
+Text editors in programming allow you to understand better the actions
+taking place in them - for example by coloring words or functions.
+
+If you use "CTRL+SPACE" keys you can complete a command for example in Geany, but
+not in Gedit.
+
+
+If we use command:  diff nowy.c program.c
+We can see differences between two programs:
+
+9,11c9,11
+< printf("#           #\n", i);
+< printf("# Licze: %d #\n");
+< printf("#           #\n");
+---
+> printf("|           |\n", i);
+> printf("| Licze: %d |\n");
+> printf("|           |\n");
+
+
+If we use command:  diff -y nowy.c program.c
+We can see differences between two programs in another way:
+
+#include <stdio.h>                     #include <stdio.h>
+#include <stdlib.h>                    #include <stdlib.h>
+
+int main (int argc, char **argv)       int main (int argc, char **argv)
+{                                      {
+for(i=0; i<10; i++)                    for(i=0; i<10; i++)
+{                                      {
+printf("+----------+\n");               printf("+----------+\n");
+printf("#           #\n", i);    |      printf("|           |\n", i);
+printf("# Licze: %d #\n");       |      printf("| Licze: %d |\n");
+printf("#           #\n");       |      printf("|           |\n");
+printf("+----------+\n");               printf("+----------+\n");
+}                                       }
+return 0;                                return 0;
+}                                       } 
