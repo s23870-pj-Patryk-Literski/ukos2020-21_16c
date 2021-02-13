@@ -1,0 +1,3 @@
+Na poczatku cwiczen chcemy wywolac komende, która moze wywolac wiecej skryptów
+Dla uruchomiania tej komendy potrzebujemy uruchomic PowerShella z prawami administratora
+Nastepnie komeda Set - ExecutionPlicy Bypass

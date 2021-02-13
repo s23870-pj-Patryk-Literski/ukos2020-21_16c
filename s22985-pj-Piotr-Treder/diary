@@ -1,0 +1,43 @@
+06.02.2021
+W dniu dzisiejszym będzie słowo wstępu do Windows'a i jego PowerShell'a ( <- interpreter poleceń firmy microsoft ) 
+stosowany od Windows XP i wyżej 
+Słowem wsępu to consola gdzie dane wyjściowe są oparte na obiektach. 
+
+Żeby cokolwiek robić na PS najpierw ustawiony musi być ExecutionPolicy 				Get-ExecutionPolicy
+Domyśle ustawiony jest jako Restricted - co uniemożliwia nam wykonywanie polecen 		Set-ExecutionPolicy Bypass
+A PowerShell uruchomiony jako administrator
+
+Troche skrótów od PowerShell zanim zaczniemy wykonywać polecenia 
+Za pomocą TAB możemy wywołać komendy jakie są dostępne 
+Ctrl+Spacja powoduje wywołanie listy proponowanych dokończeń komendy.
+możemy ustawić zmienne np $m która będzie odpowiadać komendzie 					$m = get-module -ListAvailable
+od teraz zamiast pisać całą komende możemy wpisać tylko $m 
+
+są już zapisane niektóre skróty np. -> ? odpowiada -> WhereObject Lub -> % odpowiada -> ForEach-Object 
+
+Nazywa to się Aliasami a jest ich co niemiara. 
+
+Lista wszystkich Aliasów znajduje się pod komendą ----------------------------------------------Get-Alias 
+
+| <- Pipeline / Potok jest czymś w rodzaju łączenia kilku komend przykład. ---------------------Get-Process | Where-Object {$_.ProcessName -eq 'svchost'}
+
+									Równiedobrze może być 	Get-Process | ? {$_.ProcessName -eq 'svchost'}
+
+								Lub żeby jeszcze skrócić	$m = Get-Process
+												$m | ? {$_.ProcessName -eq 'svchost'}
+												$_. oznacza element przed potokiem 
+												w tym przypadku Get-Process.ProcessName <- w sumie robi sie taka ścieżka
+													
+Ta komenda akurat wyświetli Wszystkie procesy, gdzie ProcessName będzie równy 'svchost' gdzie:
+-> -eq oznacza equal, czyli ProcessName jest równy 'svchost'
+$_.ProcessName -> ustawiamy co ma być szukaną  ( Składnia Where-Object ) 
+
+Wszystkie Komendy są pod komendą ---------------------------------------------------------------Get-Command
+
+I tak jak wyżej można te komendy filtrować - np 						Get-Command | ? {$_.CommandType -eq 'Cmdlet'}
+																^
+																Ważdy czynnik filtrowania 
+																mogą być inne np -gt ( greater than ) 
+																
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	

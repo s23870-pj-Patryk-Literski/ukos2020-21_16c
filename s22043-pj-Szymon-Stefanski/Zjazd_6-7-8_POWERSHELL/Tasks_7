@@ -1,0 +1,40 @@
+Task from Powershell part 1
+
+Mr. Tomasz said that we don't have too describe
+all of tasks in Powershell so I choose a few to
+describe.
+
+BitsTransfer
+
+BitsTransfer is module in powershell which is use to
+managing background data transfers.
+
+Commands:
+1. Import-Module BitsTransfer - loading of bitstransfer module
+
+2. Get-Command -Module BitsTransfer - listing of all commands in this module,
+
+3. Start-BitsTransfer -Source http://szuflandia.pjwstk.edu.pl/pub/repo/java/lubuntu_13_04_v02.zip -Destination D:\ -Credential $cred -Authentication Negotiate
+
+This command above is for downloading something from internet, in my case I download JPG file with
+photo of man with snake in hands.
+
+4. Get-BitsTransfer - we can see transfer status,
+
+5. Complete-BitsTransfer -BitsJob $job - this command we have to use sometimes to end of downloading
+when we see in transfer status "transfered".
+
+Measure-Command - this command is use to timing.
+
+Measure-Command {Get-ChildItem -Path C:\Windows}
+We can see list of time units like days/hours/minutes/seconds etc.
+
+Get-Alias | ? {$_.Definition -like "Get-ChildItem"}
+We can see a list of shorcuts.
+
+ls C:\ | %{Sleep -Milliseconds 250; return $_} | Format-Table
+We can see a list of permissions, last write time and names.
+	
+	
+	
+

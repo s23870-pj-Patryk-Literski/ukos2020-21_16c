@@ -1,0 +1,56 @@
+Task 1
+Using the cd and mkdir commands create the following directory tree in your home directory
+(in any subdirectory), or directly in ~):
+
+ukos
+|\ katalog
+|      |\ katalog2
+| \ katalog3
+ \ klamka
+
+I use commands :
+mkdir ukos (mkdir - this command creating directories)
+cd ukos
+mkdir katalog
+mkdir klamka
+cd katalog
+mkdir katalog2
+mkdir katalog3
+
+Task 2
+In directory ukos\klamka create files zajecia2.txt zajecia2.log inny.txt nowy.txt
+
+I use commands :
+touch zajecia2.txt
+touch zajecia2.log
+touch inny.txt
+touch nowy.txt
+
+Task 3
+Use one command mkdir and creat in directory ukos following directory:
+ukos/to/jest/dluga/nazwa
+
+I use command:
+mkdir -p ././ukos/to/jest/dluga/nazwa
+
+Task 4
+Set in directory ukos/to/jest/dluga/nazwa file dane.txt
+
+I use command:
+touch dane.txt
+
+Task 5
+Delete from directory ukos/klamka every files with .txt extension
+
+I use command:
+rm /home/ubuntu/ukos/klamka/*.txt
+
+Delete directory ukos/katalog/katalog2
+
+I use command:
+rmdir katalog/katalog1
+
+Delete entire director klamka by using single command.
+
+I use command:
+rm -r ukos

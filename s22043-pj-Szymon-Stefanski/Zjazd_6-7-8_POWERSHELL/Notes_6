@@ -1,0 +1,43 @@
+08.02.2021
+My dear diary
+
+Today I learn something about Windows and Powershell.
+
+Powershell is a command's interpreter which is available
+in Windows XP or newer and it was made in 2006.
+
+First of all we need to configurate Powershell in our computers
+we have to run Powershell as adminnistrator and use command:
+
+Set-ExecutionPlicy Bypass
+
+If we do it we can run Powershell as normal user.
+
+List of commands good to know at start:
+
+If we need to see commands:
+Get-Help Get-ExecutionPolicy
+
+And if we need to see examples of them:
+Get-Help Get-ExecutionPolicy -Examples
+
+If we want to see list of available modules in Powershell:
+Get-Module -ListAvailable
+
+When I use "TAB" key I see available commands.
+When I use "CTRL+SPACE" keys I see a list of proposed command
+endings.
+
+Sign "|" (pipeline), which runs the next command on the output from the previous command
+If we want to see collection/list/array we need to write "$_" after |
+
+For example:
+Get-Module -ListAvailable | ? {$_.Version -ge "2.0.0.0"}
+
+This command show us only these modules, which version is that same or newer from 2.0.0.0.
+
+For today that's all, see you!!!
+	
+	
+	
+

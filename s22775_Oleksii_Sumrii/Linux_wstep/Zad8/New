@@ -1,0 +1,3 @@
+dla tego żeby wyświetlić zawartość katalogu nie wchodząc w katalog powiniśmy wpisać:
+ls -a home/
+ls -lh home/ - dla tego żeby zobaczyć prawa dostępu plików które znajdują się w katalogu.

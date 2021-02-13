@@ -1,0 +1,2 @@
+Aby uzyskac informacje o jakiejkolwiek komendzie wpisujecie Get - Help (nazwa_komendy).
+Jesli nie bedzie nam to działalo to mozemy uzyc komendy (Get-Help get-help --online).
