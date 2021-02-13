@@ -1,1 +1,0 @@
-Poleceniem "ls" wyswietlamy zawartosc katalogu

@@ -1,1 +1,0 @@
-Ukaze sie "bash: cd: /root: Permission denied" Brak uprawniej. Trzeba uzyc konta admina "sudo"

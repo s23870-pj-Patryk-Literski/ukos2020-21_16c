@@ -1,1 +1,0 @@
-Uzywamy komendy "pwd" aby okreslic swoje polozenie
