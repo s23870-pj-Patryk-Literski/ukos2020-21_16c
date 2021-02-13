@@ -1,0 +1,43 @@
+Polecenie „ps” służy do wyświetlania listy procesów. Zobacz, co się stanie, jeśli wpiszemy to w terminalu:
+
+    ps - Wyświetlane podstawowe dane procesowe.
+    ps -a - Wyświetlane są podstawowe dane procesowe bez procesu o bash,
+    ps x - Wyświetlane dane o większej liczbie procesów.
+    ps aux - Wyświetla szczegółowe dane o procesach.
+
+* Kiedy jest? zaznacz, że to znaczy, że proces nie ma terminala sterującego.
+Proces bez terminala sterującego jest demonem.
+
+Procesy Bash i root:
+* Użyłem polecenia ps -ef | grep bash / root
+
+Ćwiczenie 2
+
+1. Otworzyłem Edytor TEKSTÓW,
+2. Widziałem jego PID za pomocą polecenia: ps aux | grep gedit i było: 1336.
+3. Zamknąłem go poleceniem: kill 1336.
+4. Otworzyłem okna seberal firefox i zamknąłem je poleceniem: killall firefox.
+5. Jako użytkownik mogę zabić tylko własne procesy, a roota mogę zabić je wszystkie.
+
+Ćwiczenie 3
+
+ 1. Uruchamiamy polecenie „cat” bez parametrów.
+* Nic się nie dzieje, proces jest otwarty itp ...
+
+ 2. Naciśnij CTRL + C i zobacz, co się stanie:
+* CTRL + C proces zostaje zamknięty.
+
+    Wydaj polecenie „cat> wynik1.txt”
+    Wpisz tekst „witaj” bez użycia klawisza Enter.
+    Naciśnij Ctrl + C
+    Zobacz co jest w pliku "wynik1.txt".
+    
+    * NIC - PLIK JEST PUSTY
+
+    Wydaj polecenie „cat> wynik2.txt”
+    Wpisz tekst „witaj” bez użycia klawisza Enter.
+    Naciśnij Ctrl + D (może musisz nacisnąć 2 razy)
+    Zobacz co jest w pliku "wynik1.txt".
+
+    * W tym pliku znajduje się komunikat "witaj".
+
