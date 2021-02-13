@@ -1,3 +1,0 @@
-Aby wyswietlic zawartosc katalogu bez wchodzenia do niego uzywamy
-np ls -a home/
-luv ls -lh home/ - zeby zobaczyć prawa dostępu plików które znajdują się w katalogu.

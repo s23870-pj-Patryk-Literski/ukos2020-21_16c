@@ -1,1 +1,0 @@
-Tak jakby zablokujemy sobie ekran, powrocimy do ekranu logowania :), aby wyjsc z tego stanu musimy uzyc kombinacji klawiszy Alt+F7

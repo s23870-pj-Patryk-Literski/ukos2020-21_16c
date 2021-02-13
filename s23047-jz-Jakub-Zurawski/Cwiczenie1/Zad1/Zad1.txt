@@ -1,1 +1,0 @@
-Klikamy start, nastepnie "System Tools" > "LXTerminal"
