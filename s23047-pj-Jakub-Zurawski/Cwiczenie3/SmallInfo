@@ -1,0 +1,4 @@
+Sprawdzanie polecenia "ls -a" oraz "ls -a | grep D". Polecenie z "grep" sluzy do wyszukiwania wierszy w pliku lub strumieniu wejsciowym(skopiowalem to z szuflandii).
+Chodzilo i wyszukanie pliku cos ma literke "D".
+
+"ls -a | grep D > ListaPlikowZLiterkaD.txt" bash: ListaPlikowZLiterkaD.txt: Permission denied.

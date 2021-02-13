@@ -1,0 +1,8 @@
+"ps -a" all with tty, except session leaders - roznica miedzy "ps" a "ps-a" jest taka ze "ps" wyswietla 3 pliki, a "ps -a" wyswietla tylko dwa(nie pokazuje basha).
+"ps -x" pokaze na kilka procesow w numerem, tty, stat czas oraz komende.
+PID TTY      STAT   TIME COMMAND
+ 743 ?        Ss     0:00 /lib/systemd/systemd --user
+"ps -aux" wyswietli dodatkowo usera i kilka innym informacji jak (wykorzystanie procesora czy pamieci).
+
+komendą "ps -C bash"- wyswietlimy procesy bash <---- nie jestem pewien czy to to.
+Komendą "ps -U root" - wywietlimy procesy należące do użytkownika root. Jeżeli chcemy wypisać wszystkie procesy poza root'me wpisujemy "ps -U root -u root -N".
