@@ -1,0 +1,451 @@
+1. Po wpisaniu komendy ps otrzymuję:
+  PID TTY          TIME CMD
+ 9029 pts/1    00:00:00 bash
+ 9234 pts/1    00:00:00 ps
+
+Wpisuję ps -a:
+  PID TTY          TIME CMD
+ 9025 pts/0    00:00:00 tail
+ 9249 pts/1    00:00:00 ps
+
+Wpisuję ps x:
+  PID TTY      STAT   TIME COMMAND
+ 1269 ?        Sl     0:57 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1301 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2091 ?        Ss     0:00 /lib/systemd/systemd --user
+ 2098 ?        S      0:00 (sd-pam)
+ 2114 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+ 2121 ?        Ssl    0:04 cinnamon-session --session cinnamon
+ 2138 ?        Ss     0:04 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 2193 ?        Ss     0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+ 2205 ?        Ssl    0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+ 2210 ?        S      0:02 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+ 2212 ?        Sl     0:09 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+ 2226 ?        Sl     0:05 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-keyboard
+ 2227 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-cursor
+ 2228 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-orientation
+ 2229 ?        Sl     0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-background
+ 2231 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-wacom
+ 2232 ?        Sl     0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-media-keys
+ 2233 ?        Sl     0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-sound
+ 2235 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-screensaver-proxy
+ 2236 ?        Sl     0:03 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-power
+ 2237 ?        Sl     0:03 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-housekeeping
+ 2239 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-print-notifications
+ 2241 ?        S<l   51:11 /usr/bin/pulseaudio --start --log-target=syslog
+ 2249 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-color
+ 2254 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-clipboard
+ 2261 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xrandr
+ 2262 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-settings
+ 2271 ?        Sl     0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xsettings
+ 2283 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-mouse
+ 2288 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-keyboard
+ 2292 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-automount
+ 2293 ?        Ssl    0:00 /usr/lib/gvfs/gvfsd
+ 2301 ?        Rl    76:09 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1361 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2305 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+ 2321 ?        Sl     0:00 /usr/lib/dconf/dconf-service
+ 2336 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-printer
+ 2359 ?        Sl     0:55 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1364 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2370 ?        Ssl    0:01 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 2375 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+ 2379 ?        Sl     0:00 /usr/lib/gnome-online-accounts/goa-daemon
+ 2388 ?        Sl     0:00 /usr/lib/gnome-online-accounts/goa-identity-service
+ 2393 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 2397 ?        S      0:00 cinnamon-launcher
+ 2398 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+ 2402 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 2413 ?        Sl    60:34 cinnamon --replace
+ 2436 ?        Sl     0:00 blueberry-obex-agent
+ 2448 ?        Sl     0:03 nemo-desktop
+ 2452 ?        Sl     0:00 nm-applet
+ 2454 ?        Sl     0:00 cinnamon-killer-daemon
+ 2455 ?        Sl     0:01 /usr/bin/python3 /usr/bin/redshift-gtk
+ 2458 ?        Sl     0:01 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+ 2469 ?        S      0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+ 2482 ?        Ss     0:00 /usr/lib/bluetooth/obexd
+ 2484 ?        Sl     0:05 /usr/bin/redshift -v
+ 2562 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.26 /org/gtk/gvfs/exec_spaw/0
+ 2568 ?        Ssl    0:00 /usr/lib/gvfs/gvfsd-metadata
+ 2580 ?        Sl     0:06 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1371 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2582 ?        Sl     0:00 blueberry-tray
+ 2583 ?        Sl     0:10 cinnamon-screensaver
+ 2596 ?        S      0:00 python3 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+ 2597 ?        S      0:00 /usr/sbin/rfkill event
+ 2604 ?        SLl   48:47 /opt/google/chrome/chrome
+ 2610 ?        S      0:00 cat
+ 2611 ?        S      0:01 cat
+ 2614 ?        S      0:00 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox
+ 2615 ?        S      0:00 /opt/google/chrome/chrome --type=zygote
+ 2616 ?        S      0:00 /opt/google/chrome/nacl_helper
+ 2619 ?        S      0:02 /opt/google/chrome/chrome --type=zygote
+ 2638 ?        Sl    85:45 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=12316635030600589220,10003969397721753752,131072 --gpu-preferences=QAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAABgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA --shared-files
+ 2643 ?        SLl   14:39 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=network --shared-files=v8_context_snapshot_data:100
+ 2667 ?        Sl     0:37 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=utility --shared-files=v8_context_snapshot_data:100
+ 2680 ?        Sl     0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=data_decoder.mojom.DataDecoderService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=utility --shared-files=v8_context_snapshot_data:100
+ 2712 ?        Sl     0:02 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1376 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2723 ?        Sl     1:38 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1377 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2740 ?        Sl     1:40 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2751 ?        Sl     0:36 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2789 ?        Sl     0:07 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2819 ?        Sl     0:40 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1381 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2852 ?        Sl     0:02 mintUpdate
+ 2866 ?        Sl     0:03 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1384 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 2880 ?        Sl     0:38 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1385 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 3042 ?        Sl     0:01 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+ 3103 ?        Sl     1:03 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=25 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 3178 ?        Sl     0:27 mintreport-tray
+ 3386 ?        S      0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+ 3517 ?        Sl    18:58 /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=none --shared-files=v8_context_snapshot_data:100
+ 3937 ?        Sl     0:06 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1441 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 4394 ?        S      0:00 /bin/sh /home/dom133/Programy/pycharm-community-2019.3.4/bin/pycharm.sh
+ 4437 ?        Sl     2:03 /home/dom133/Programy/pycharm-community-2019.3.4/jbr/bin/java -classpath /home/dom133/Programy/pycharm-community-2019.3.4/lib/bootstrap.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/extensions.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/util.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/jdom.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/log4j.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/jna.jar -Xms128m -Xmx1988m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine -Dsun.tools.attach.tmp.only=true -XX:ErrorFile=/home/dom133/java_error_in_pycharm_%p.log -XX:HeapDumpPath=/home/dom133/java_error_in_pycharm_.hprof -Didea.vendor.name=JetBrains -Didea.paths.selector=PyCharmCE2020.3 -Djb.vmOptionsFile=/home/dom133/.config/JetBrains/PyCharmCE2020.3/pycharm64.vmoptions -Didea.platform.prefix=PyCharmCore com.intellij.idea.Main
+ 4499 ?        S      0:00 /home/dom133/Programy/pycharm-community-2019.3.4/bin/fsnotifier64
+ 5331 ?        Sl     3:23 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1493 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 8751 ?        Sl     0:01 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1599 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 8984 ?        Dl     0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=video_capture --shared-files=v8_context_snapshot_data:100
+ 9025 pts/0    S+     0:00 tail -f plik
+ 9029 pts/1    Ss     0:00 bash
+ 9124 ?        Sl     0:04 xed /home/dom133/Studia/UKOS/ukos2020-21_16c/s22986-pj-Dominik-Kruszewski/Lesson_03/03
+ 9163 ?        Sl     0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1614 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 9168 ?        Sl     0:08 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1615 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+ 9253 pts/1    R+     0:00 ps -x
+13012 ?        Sl     6:32 /usr/share/spotify/spotify
+13017 ?        S      0:00 /usr/share/spotify/spotify --type=zygote --no-sandbox --log-file=/usr/share/spotify/debug.log --log-severity=disable --product-version=Spotify/1.1.10.546 --lang=en-US
+13030 ?        Sl     2:04 /usr/share/spotify/spotify --type=gpu-process --field-trial-handle=5072467407139920103,12155350010631339045,131072 --disable-features=ExtendedMouseButtons,NetworkService --no-sandbox --log-file=/usr/share/spotify/debug.log --log-severity=disable --product-version=Spotify/1.1.10.546 --lang=en-US --gpu-preferences=KAAAAAAAAAAgAAAgAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --log-file=/usr/share/spotify/debug.log --service-request-channel-token=15504205878275036700
+13058 ?        Sl     4:41 /usr/share/spotify/spotify --type=renderer --no-sandbox --log-file=/usr/share/spotify/debug.log --field-trial-handle=5072467407139920103,12155350010631339045,131072 --disable-features=ExtendedMouseButtons,NetworkService --lang=pl --log-file=/usr/share/spotify/debug.log --log-severity=disable --product-version=Spotify/1.1.10.546 --disable-spell-checking --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16710477529331380680 --renderer-client-id=3 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+14556 ?        Sl    82:18 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=427 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+14851 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.26 /org/gtk/gvfs/exec_spaw/3
+14883 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.26 /org/gtk/gvfs/exec_spaw/7
+14899 ?        Sl     0:29 nemo
+15772 ?        Ssl    0:05 /usr/lib/gnome-terminal/gnome-terminal-server
+15779 pts/0    Ss     0:00 bash
+26089 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-http --spawner :1.26 /org/gtk/gvfs/exec_spaw/8
+26095 ?        S      0:00 sh -c /usr/lib/x86_64-linux-gnu/libproxy/0.4.14/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+26096 ?        Sl     0:00 /usr/lib/x86_64-linux-gnu/libproxy/0.4.14/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+30229 ?        Sl     1:06 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1180 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+30297 ?        Sl     1:29 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1185 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+
+Wpisuję ps aux:
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0 225908  9628 ?        Ss   10:57   0:02 /sbin/init splash
+root         2  0.0  0.0      0     0 ?        S    10:57   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   10:57   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   10:57   0:00 [rcu_par_gp]
+root         9  0.0  0.0      0     0 ?        I<   10:57   0:00 [mm_percpu_wq]
+root        10  0.0  0.0      0     0 ?        S    10:57   0:01 [ksoftirqd/0]
+root        11  0.1  0.0      0     0 ?        I    10:57   1:12 [rcu_sched]
+root        12  0.0  0.0      0     0 ?        S    10:57   0:00 [migration/0]
+root        13  0.0  0.0      0     0 ?        S    10:57   0:00 [idle_inject/0]
+root        14  0.0  0.0      0     0 ?        S    10:57   0:00 [cpuhp/0]
+root        15  0.0  0.0      0     0 ?        S    10:57   0:00 [cpuhp/1]
+root        16  0.0  0.0      0     0 ?        S    10:57   0:00 [idle_inject/1]
+root        17  0.0  0.0      0     0 ?        S    10:57   0:00 [migration/1]
+root        18  0.0  0.0      0     0 ?        S    10:57   0:01 [ksoftirqd/1]
+root        21  0.0  0.0      0     0 ?        S    10:57   0:00 [cpuhp/2]
+root        22  0.0  0.0      0     0 ?        S    10:57   0:00 [idle_inject/2]
+root        23  0.0  0.0      0     0 ?        S    10:57   0:00 [migration/2]
+root        24  0.0  0.0      0     0 ?        S    10:57   0:00 [ksoftirqd/2]
+root        27  0.0  0.0      0     0 ?        S    10:57   0:00 [cpuhp/3]
+root        28  0.0  0.0      0     0 ?        S    10:57   0:00 [idle_inject/3]
+root        29  0.0  0.0      0     0 ?        S    10:57   0:01 [migration/3]
+root        30  0.0  0.0      0     0 ?        S    10:57   0:03 [ksoftirqd/3]
+root        33  0.0  0.0      0     0 ?        S    10:57   0:00 [kdevtmpfs]
+root        34  0.0  0.0      0     0 ?        I<   10:57   0:00 [netns]
+root        35  0.0  0.0      0     0 ?        S    10:57   0:00 [rcu_tasks_kthre]
+root        36  0.0  0.0      0     0 ?        S    10:57   0:00 [kauditd]
+root        37  0.0  0.0      0     0 ?        S    10:57   0:00 [khungtaskd]
+root        38  0.0  0.0      0     0 ?        S    10:57   0:00 [oom_reaper]
+root        39  0.0  0.0      0     0 ?        I<   10:57   0:00 [writeback]
+root        40  0.0  0.0      0     0 ?        S    10:57   0:00 [kcompactd0]
+root        41  0.0  0.0      0     0 ?        SN   10:57   0:00 [ksmd]
+root        42  0.0  0.0      0     0 ?        SN   10:57   0:00 [khugepaged]
+root        89  0.0  0.0      0     0 ?        I<   10:57   0:00 [kintegrityd]
+root        90  0.0  0.0      0     0 ?        I<   10:57   0:00 [kblockd]
+root        91  0.0  0.0      0     0 ?        I<   10:57   0:00 [blkcg_punt_bio]
+root        95  0.0  0.0      0     0 ?        I<   10:57   0:00 [tpm_dev_wq]
+root        96  0.0  0.0      0     0 ?        I<   10:57   0:00 [ata_sff]
+root        97  0.0  0.0      0     0 ?        I<   10:57   0:00 [md]
+root        98  0.0  0.0      0     0 ?        I<   10:57   0:00 [edac-poller]
+root        99  0.0  0.0      0     0 ?        I<   10:57   0:00 [devfreq_wq]
+root       101  0.0  0.0      0     0 ?        S    10:57   0:00 [watchdogd]
+root       103  0.0  0.0      0     0 ?        S    10:57   0:00 [kswapd0]
+root       104  0.0  0.0      0     0 ?        S    10:57   0:00 [ecryptfs-kthrea]
+root       106  0.0  0.0      0     0 ?        I<   10:57   0:00 [kthrotld]
+root       107  0.0  0.0      0     0 ?        S    10:57   0:00 [irq/122-aerdrv]
+root       108  0.0  0.0      0     0 ?        S    10:57   0:00 [irq/123-aerdrv]
+root       109  0.0  0.0      0     0 ?        I<   10:57   0:00 [acpi_thermal_pm]
+root       111  0.0  0.0      0     0 ?        I<   10:57   0:00 [vfio-irqfd-clea]
+root       113  0.0  0.0      0     0 ?        I<   10:57   0:00 [ipv6_addrconf]
+root       122  0.0  0.0      0     0 ?        I<   10:57   0:00 [kstrp]
+root       125  0.0  0.0      0     0 ?        I<   10:57   0:38 [kworker/u9:0-uv]
+root       140  0.0  0.0      0     0 ?        I<   10:57   0:00 [charger_manager]
+root       200  0.0  0.0      0     0 ?        S    10:57   0:00 [scsi_eh_0]
+root       201  0.0  0.0      0     0 ?        I<   10:57   0:00 [scsi_tmf_0]
+root       202  0.0  0.0      0     0 ?        S    10:57   0:00 [scsi_eh_1]
+root       203  0.0  0.0      0     0 ?        I<   10:57   0:00 [scsi_tmf_1]
+root       204  0.0  0.0      0     0 ?        S    10:57   0:00 [scsi_eh_2]
+root       205  0.0  0.0      0     0 ?        I<   10:57   0:00 [scsi_tmf_2]
+root       222  0.0  0.0      0     0 ?        I<   10:57   0:00 [uas]
+root       223  0.0  0.0      0     0 ?        S    10:57   0:00 [scsi_eh_3]
+root       224  0.0  0.0      0     0 ?        I<   10:57   0:00 [scsi_tmf_3]
+root       311  0.2  0.0      0     0 ?        I    19:41   0:16 [kworker/u8:4-i9]
+root       386  0.0  0.0      0     0 ?        S    10:57   0:04 [jbd2/sdc6-8]
+root       387  0.0  0.0      0     0 ?        I<   10:57   0:00 [ext4-rsv-conver]
+root       447  0.0  0.3 160740 50112 ?        S<s  10:57   0:00 /lib/systemd/systemd-journald
+root       466  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop0]
+root       468  0.0  0.0      0     0 ?        I<   10:57   0:00 [kdmflush]
+root       474  0.0  0.0      0     0 ?        I<   10:57   0:00 [cryptd]
+root       475  0.0  0.0  97712  1804 ?        Ss   10:57   0:00 /sbin/lvmetad -f
+root       500  0.0  0.0      0     0 ?        I<   10:57   0:00 [kcryptd_io/253:]
+root       501  0.0  0.0      0     0 ?        I<   10:57   0:00 [kcryptd/253:0]
+root       502  0.0  0.0      0     0 ?        S    10:57   0:00 [dmcrypt_write/2]
+root       503  0.0  0.0  52336  6172 ?        Ss   10:57   0:01 /lib/systemd/systemd-udevd
+root       506  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop1]
+root       509  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop2]
+root       512  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop3]
+root       516  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop4]
+root       517  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop5]
+root       518  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop6]
+root       519  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop7]
+root       520  0.0  0.0      0     0 ?        S<   10:57   0:00 [loop8]
+root       540  0.0  0.0      0     0 ?        S    10:57   0:00 [irq/129-mei_me]
+root       608  0.0  0.0      0     0 ?        I<   10:57   0:00 [cfg80211]
+root       627  0.0  0.0      0     0 ?        I<   10:57   0:00 [kmemstick]
+root       654  0.0  0.0      0     0 ?        S    10:57   0:01 [irq/130-iwlwifi]
+root       730  0.0  0.0      0     0 ?        I<   10:57   0:00 [kworker/u9:1-hc]
+systemd+  1038  0.0  0.0 146140  3384 ?        Ssl  10:57   0:00 /lib/systemd/systemd-timesyncd
+systemd+  1040  0.0  0.0  71060  6560 ?        Ss   10:57   0:02 /lib/systemd/systemd-resolved
+avahi     1121  0.0  0.0  47268  3232 ?        Ss   10:57   0:00 avahi-daemon: running [dom133-Latitude-E7470.local]
+root      1125  0.0  0.0   4556   796 ?        Ss   10:57   0:02 /usr/sbin/acpid
+root      1126  0.0  0.0  36552  4300 ?        Ss   10:57   0:00 /usr/lib/bluetooth/bluetoothd
+root      1127  0.0  0.0 434332  9672 ?        Ssl  10:57   0:00 /usr/sbin/ModemManager --filter-policy=strict
+root      1135  0.0  0.0  71404  6980 ?        Ss   10:57   0:00 /lib/systemd/systemd-logind
+root      1137  0.2  0.0 181100  9440 ?        Ssl  10:57   1:18 /usr/sbin/thermald --no-daemon --dbus-enable
+root      1141  0.0  0.0 289160  7284 ?        Ssl  10:57   0:00 /usr/lib/accountsservice/accounts-daemon
+root      1143  0.0  0.0  32544  3120 ?        Ss   10:57   0:00 /usr/sbin/cron -f
+message+  1144  0.0  0.0  51584  5996 ?        Ss   10:57   0:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+avahi     1170  0.0  0.0  47080   336 ?        S    10:57   0:00 avahi-daemon: chroot helper
+root      1172  0.0  0.0  24740  3000 ?        Ss   10:57   0:01 /usr/bin/vmware-usbarbitrator
+root      1181  0.0  0.0  45612  7940 ?        Ss   10:57   0:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+root      1185  0.0  0.1 483844 18664 ?        Ssl  10:57   0:02 /usr/sbin/NetworkManager --no-daemon
+root      1186  0.0  0.0 110488  3540 ?        Ssl  10:57   0:02 /usr/sbin/irqbalance --foreground
+root      1190  0.0  0.1 171988 17184 ?        Ssl  10:57   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+daemon    1191  0.0  0.0  28336  2360 ?        Ss   10:57   0:00 /usr/sbin/atd -f
+root      1199  0.0  0.1 1167492 29352 ?       Ssl  10:57   0:09 /usr/lib/snapd/snapd
+root      1209  0.0  0.0  23852  2632 ?        Ss   10:57   0:00 /usr/lib/vmware/view/bin/ftsprhvd
+root      1210  0.0  0.0 577308 12392 ?        Ssl  10:57   0:08 /usr/lib/udisks2/udisksd
+syslog    1213  0.0  0.0 269332  4748 ?        Ssl  10:57   0:00 /usr/sbin/rsyslogd -n
+root      1221  0.0  0.0 297756 10412 ?        Ssl  10:57   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root      1242  0.0  0.0  34096  2684 ?        Ss   10:57   0:01 /usr/lib/vmware/view/bin/ftscanhvd
+root      1243  0.0  0.1 356684 16912 ?        Sl   10:57   0:00 /usr/lib/vmware/view/bin/ftscanhvd
+dom133    1269  0.8  1.4 21776204 229364 ?     Sl   19:51   0:57 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1301 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+colord    1279  0.0  0.0 319448 14252 ?        Ssl  10:57   0:00 /usr/lib/colord/colord
+root      1301  0.0  0.0      0     0 ?        I<   10:57   0:00 [iprt-VBoxWQueue]
+root      1307  0.0  0.0      0     0 ?        S    10:57   0:00 [iprt-VBoxTscThr]
+root      1324  0.0  0.0 364264  6920 ?        SLsl 10:57   0:00 /usr/sbin/lightdm
+root      1339  8.0  0.7 1174704 129384 tty7   Ssl+ 10:57  51:57 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      1341  0.0  0.0  17404  1920 tty1     Ss+  10:57   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root      1404  0.0  0.0  25988  6212 ?        S    10:57   0:00 /sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /run/dhclient-enp0s31f6.pid -lf /var/lib/NetworkManager/dhclient-a994ff93-1f1d-3de0-b6d3-9c4e7deb6fe9-enp0s31f6.lease -cf /var/lib/NetworkManager/dhclient-enp0s31f6.conf enp0s31f6
+kernoops  1510  0.0  0.0  56944   420 ?        Ss   10:57   0:01 /usr/sbin/kerneloops --test
+kernoops  1514  0.0  0.0  56944   416 ?        Ss   10:57   0:01 /usr/sbin/kerneloops
+root      1896  0.0  0.0 317020  9048 ?        Ssl  10:57   0:03 /usr/lib/upower/upowerd
+root      1929  0.0  0.0 280580  8992 ?        Sl   10:57   0:00 lightdm --session-child 12 19
+root      2086  0.0  0.0      0     0 ?        S<   10:58   0:00 [loop9]
+dom133    2091  0.0  0.0  77196  8332 ?        Ss   10:58   0:00 /lib/systemd/systemd --user
+dom133    2098  0.0  0.0 140740  3268 ?        S    10:58   0:00 (sd-pam)
+dom133    2114  0.0  0.0 504024  8608 ?        Sl   10:58   0:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+dom133    2121  0.0  0.1 553504 29852 ?        Ssl  10:58   0:04 cinnamon-session --session cinnamon
+dom133    2138  0.0  0.0  51512  5976 ?        Ss   10:58   0:04 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+dom133    2193  0.0  0.0  11312   320 ?        Ss   10:58   0:00 /usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+dom133    2205  0.0  0.0 349444  6196 ?        Ssl  10:58   0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+dom133    2210  0.0  0.0  50188  4376 ?        S    10:58   0:02 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+dom133    2212  0.0  0.0 220792  6908 ?        Sl   10:58   0:09 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+dom133    2226  0.0  0.1 450220 26888 ?        Sl   10:58   0:05 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-keyboard
+dom133    2227  0.0  0.1 324464 24476 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-cursor
+dom133    2228  0.0  0.1 548116 25144 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-orientation
+dom133    2229  0.0  0.4 572824 65484 ?        Sl   10:58   0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-background
+dom133    2231  0.0  0.1 383840 26924 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-wacom
+dom133    2232  0.0  0.1 859152 27828 ?        Sl   10:58   0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-media-keys
+dom133    2233  0.0  0.1 846308 27808 ?        Sl   10:58   0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-sound
+dom133    2235  0.0  0.1 398224 24704 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-screensaver-proxy
+dom133    2236  0.0  0.2 777208 34376 ?        Sl   10:58   0:03 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-power
+dom133    2237  0.0  0.1 400624 24464 ?        Sl   10:58   0:03 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-housekeeping
+dom133    2239  0.0  0.1 448268 27408 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-print-notifications
+dom133    2241  7.9  0.1 2644996 26352 ?       S<l  10:58  51:16 /usr/bin/pulseaudio --start --log-target=syslog
+rtkit     2242  0.0  0.0 183512  2984 ?        SNsl 10:58   0:00 /usr/lib/rtkit/rtkit-daemon
+dom133    2249  0.0  0.1 578692 26740 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-color
+dom133    2254  0.0  0.1 324468 24516 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-clipboard
+dom133    2261  0.0  0.1 487592 26216 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xrandr
+dom133    2262  0.0  0.1 400688 24904 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-settings
+dom133    2271  0.0  0.1 401668 26272 ?        Sl   10:58   0:01 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-xsettings
+dom133    2283  0.0  0.1 400664 24876 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-mouse
+dom133    2288  0.0  0.1 400660 24968 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-a11y-keyboard
+dom133    2292  0.0  0.1 478748 25632 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-automount
+dom133    2293  0.0  0.0 286288  7148 ?        Ssl  10:58   0:00 /usr/lib/gvfs/gvfsd
+dom133    2301 74.9  2.2 28239772 362528 ?     Sl   20:03  76:26 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1361 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2305  0.0  0.0 416116  6136 ?        Sl   10:58   0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+dom133    2321  0.0  0.0 188244  5532 ?        Sl   10:58   0:00 /usr/lib/dconf/dconf-service
+dom133    2336  0.0  0.0 501084 12488 ?        Sl   10:58   0:00 /usr/lib/x86_64-linux-gnu/cinnamon-settings-daemon/csd-printer
+dom133    2359  0.9  1.0 4858980 169536 ?      Sl   20:03   0:55 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1364 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root      2360  0.0  0.0      0     0 ?        S<   10:58   0:00 [krfcommd]
+dom133    2370  0.0  0.0 374772  8844 ?        Ssl  10:58   0:01 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+dom133    2375  0.0  0.0 268416  6136 ?        Ssl  10:58   0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+dom133    2379  0.0  0.2 780464 34296 ?        Sl   10:58   0:00 /usr/lib/gnome-online-accounts/goa-daemon
+dom133    2388  0.0  0.0 297880  7808 ?        Sl   10:58   0:00 /usr/lib/gnome-online-accounts/goa-identity-service
+dom133    2393  0.0  0.0 283080  6840 ?        Ssl  10:58   0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+dom133    2397  0.0  0.1 185420 29504 ?        S    10:58   0:00 cinnamon-launcher
+dom133    2398  0.0  0.0 270156  6004 ?        Ssl  10:58   0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+dom133    2402  0.0  0.0 373136  7692 ?        Ssl  10:58   0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+dom133    2413  9.3  1.2 3676728 198792 ?      Sl   10:58  60:38 cinnamon --replace
+root      2415  0.0  0.0  15908   504 ?        Ss   10:58   0:00 /sbin/mount.ntfs /dev/sdb1 /media/dom133/Dysk_SSD_eSata -o rw,nodev,nosuid,uid=1000,gid=1000,uhelper=udisks2
+dom133    2436  0.0  0.1 427584 32552 ?        Sl   10:58   0:00 blueberry-obex-agent
+dom133    2448  0.0  0.3 1214908 62424 ?       Sl   10:58   0:03 nemo-desktop
+dom133    2452  0.0  0.2 734304 40052 ?        Sl   10:58   0:00 nm-applet
+dom133    2454  0.0  0.1 410856 29976 ?        Sl   10:58   0:00 cinnamon-killer-daemon
+dom133    2455  0.0  0.2 562060 47344 ?        Sl   10:58   0:01 /usr/bin/python3 /usr/bin/redshift-gtk
+dom133    2458  0.0  0.2 464812 35340 ?        Sl   10:58   0:01 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+root      2461  0.0  0.0  15908   504 ?        Ss   10:58   0:00 /sbin/mount.ntfs /dev/sda1 /media/dom133/SIRUPA -o rw,nodev,nosuid,uid=1000,gid=1000,uhelper=udisks2
+dom133    2469  0.0  0.0  74540  5960 ?        S    10:58   0:00 /usr/lib/x86_64-linux-gnu/gconf/gconfd-2
+dom133    2482  0.0  0.0  82740  6888 ?        Ss   10:58   0:00 /usr/lib/bluetooth/obexd
+dom133    2484  0.0  0.0 293852  6764 ?        Sl   10:58   0:05 /usr/bin/redshift -v
+geoclue   2493  0.0  0.1 468412 21448 ?        Ssl  10:58   0:00 /usr/lib/geoclue-2.0/geoclue -t 5
+dom133    2562  0.0  0.0 362584  7356 ?        Sl   10:58   0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.26 /org/gtk/gvfs/exec_spaw/0
+dom133    2568  0.0  0.0 199528  6864 ?        Ssl  10:58   0:00 /usr/lib/gvfs/gvfsd-metadata
+dom133    2580  0.1  0.8 4808556 143448 ?      Sl   20:06   0:06 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1371 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2582  0.0  0.2 715496 41328 ?        Sl   10:58   0:00 blueberry-tray
+dom133    2583  0.0  0.5 787952 95364 ?        Sl   10:58   0:10 cinnamon-screensaver
+dom133    2596  0.0  0.0  31992 10248 ?        S    10:58   0:00 python3 /usr/lib/blueberry/safechild /usr/sbin/rfkill event
+dom133    2597  0.0  0.0  10968   956 ?        S    10:58   0:00 /usr/sbin/rfkill event
+dom133    2604  7.5  2.4 1126448 399716 ?      SLl  10:58  48:48 /opt/google/chrome/chrome
+dom133    2610  0.0  0.0   8832   796 ?        S    10:58   0:00 cat
+dom133    2611  0.0  0.0   8832   832 ?        S    10:58   0:01 cat
+dom133    2614  0.0  0.3 430360 51492 ?        S    10:58   0:00 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox
+dom133    2615  0.0  0.3 430360 52176 ?        S    10:58   0:00 /opt/google/chrome/chrome --type=zygote
+dom133    2616  0.0  0.0  27332  4020 ?        S    10:58   0:00 /opt/google/chrome/nacl_helper
+dom133    2619  0.0  0.0 430360 15168 ?        S    10:58   0:02 /opt/google/chrome/chrome --type=zygote
+dom133    2638 13.2  1.5 899828 253344 ?       Sl   10:58  85:46 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=12316635030600589220,10003969397721753752,131072 --gpu-preferences=QAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAABgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA --shared-files
+dom133    2643  2.2  0.7 623616 116748 ?       SLl  10:58  14:39 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=network --shared-files=v8_context_snapshot_data:100
+dom133    2667  0.0  0.2 509732 46372 ?        Sl   10:58   0:37 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=utility --shared-files=v8_context_snapshot_data:100
+dom133    2680  0.0  0.1 477228 31636 ?        Sl   10:58   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=data_decoder.mojom.DataDecoderService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=utility --shared-files=v8_context_snapshot_data:100
+dom133    2712  0.0  0.7 4769524 124216 ?      Sl   20:06   0:02 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1376 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2723  1.6  1.8 4956224 294912 ?      Sl   20:06   1:39 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1377 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2740  0.2  0.8 15286136 137532 ?     Sl   10:58   1:40 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=5 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2751  0.0  0.6 4757780 98860 ?       Sl   10:58   0:36 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2789  0.0  0.5 4757780 97120 ?       Sl   10:58   0:07 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=8 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2819  0.6  1.7 9146508 286832 ?      Sl   20:07   0:40 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1381 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2852  0.0  0.4 901796 66964 ?        Sl   10:58   0:02 mintUpdate
+dom133    2866  0.0  0.8 4789256 137680 ?      Sl   20:07   0:03 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1384 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    2880  0.6  1.7 9159304 290300 ?      Sl   20:07   0:38 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1385 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    3042  0.0  0.2 267748 37784 ?        Sl   10:58   0:01 /usr/bin/python3 /usr/share/system-config-printer/applet.py
+dom133    3103  0.1  0.9 4834520 148812 ?      Sl   10:58   1:03 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=25 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    3178  0.0  0.5 644416 85388 ?        Sl   10:58   0:27 mintreport-tray
+dom133    3386  0.0  0.0  11312  1456 ?        S    10:59   0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+dom133    3517  2.9  0.4 1325176 67508 ?       Sl   11:00  19:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=none --shared-files=v8_context_snapshot_data:100
+dom133    3937  0.1  0.9 4805316 148864 ?      Sl   20:24   0:06 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1441 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root      4218  0.0  0.0 104408 10944 ?        Ss   11:02   0:00 /usr/sbin/cupsd -l
+root      4219  0.0  0.0 303680 10516 ?        Ssl  11:02   0:00 /usr/sbin/cups-browsed
+root      4325  0.0  0.0      0     0 ?        I<   20:31   0:00 [kworker/3:2H-ev]
+dom133    4394  0.0  0.0   4632  1652 ?        S    20:31   0:00 /bin/sh /home/dom133/Programy/pycharm-community-2019.3.4/bin/pycharm.sh
+dom133    4437  2.7  4.9 6070316 800468 ?      Sl   20:31   2:03 /home/dom133/Programy/pycharm-community-2019.3.4/jbr/bin/java -classpath /home/dom133/Programy/pycharm-community-2019.3.4/lib/bootstrap.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/extensions.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/util.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/jdom.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/log4j.jar:/home/dom133/Programy/pycharm-community-2019.3.4/lib/jna.jar -Xms128m -Xmx1988m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -XX:CICompilerCount=2 -Dsun.io.useCanonPrefixCache=false -Djava.net.preferIPv4Stack=true -Djdk.http.auth.tunneling.disabledSchemes="" -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Djdk.attach.allowAttachSelf=true -Dkotlinx.coroutines.debug=off -Djdk.module.illegalAccess.silent=true -Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine -Dsun.tools.attach.tmp.only=true -XX:ErrorFile=/home/dom133/java_error_in_pycharm_%p.log -XX:HeapDumpPath=/home/dom133/java_error_in_pycharm_.hprof -Didea.vendor.name=JetBrains -Didea.paths.selector=PyCharmCE2020.3 -Djb.vmOptionsFile=/home/dom133/.config/JetBrains/PyCharmCE2020.3/pycharm64.vmoptions -Didea.platform.prefix=PyCharmCore com.intellij.idea.Main
+dom133    4499  0.0  0.0   8964  1848 ?        S    20:31   0:00 /home/dom133/Programy/pycharm-community-2019.3.4/bin/fsnotifier64
+root      4979  0.0  0.0      0     0 ?        I<   20:33   0:00 [kworker/1:2H-ev]
+dom133    5331  5.4  1.0 4916836 178196 ?      Sl   20:43   3:23 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1493 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root      5573  0.0  0.0      0     0 ?        I<   20:47   0:00 [kworker/0:0H-ev]
+root      6020  0.0  0.0      0     0 ?        I<   20:55   0:00 [kworker/2:1H-ev]
+root      6347  0.0  0.0 368136 14004 ?        Ssl  11:08   0:00 /usr/lib/packagekit/packagekitd
+root      6790  0.0  0.0      0     0 ?        I    21:07   0:00 [kworker/0:2-eve]
+root      6815  0.7  0.0      0     0 ?        I    21:09   0:15 [kworker/1:2-eve]
+root      6908  0.0  0.0      0     0 ?        I<   21:10   0:00 [kworker/3:1H-ev]
+root      6961  0.0  0.0      0     0 ?        I<   21:11   0:00 [kworker/1:1H-ev]
+root      6975  0.1  0.0      0     0 ?        I    21:12   0:03 [kworker/u8:0-ev]
+root      7358  0.0  0.0   4512   752 ?        S    11:21   0:00 bpfilter_umh
+root      7563  0.1  0.0      0     0 ?        I    21:27   0:01 [kworker/u8:3-ev]
+zerotie+  8082  0.1  0.0 365996 11452 ?        Ssl  11:28   1:06 /usr/sbin/zerotier-one
+root      8727  0.0  0.0      0     0 ?        I    21:31   0:00 [kworker/2:2-eve]
+dom133    8751  0.1  0.6 4758684 105864 ?      Sl   21:31   0:01 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1599 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root      8804  0.0  0.0      0     0 ?        I    21:31   0:00 [kworker/3:0-eve]
+root      8979  0.0  0.0      0     0 ?        I    21:36   0:00 [kworker/0:1-eve]
+dom133    8984  0.0  0.3 452744 55432 ?        Sl   21:37   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --service-sandbox-type=video_capture --shared-files=v8_context_snapshot_data:100
+root      8990  0.0  0.0      0     0 ?        I    21:37   0:00 [kworker/3:2-eve]
+root      8995  0.1  0.0      0     0 ?        D    21:37   0:00 [kworker/u8:1+ev]
+root      9001  0.0  0.0      0     0 ?        I    21:37   0:00 [kworker/1:0-eve]
+root      9004  0.0  0.0      0     0 ?        I    21:37   0:00 [kworker/2:0-eve]
+dom133    9025  0.0  0.0   9108   864 pts/0    S+   21:39   0:00 tail -f plik
+dom133    9029  0.0  0.0  24136  5588 pts/1    Ss   21:39   0:00 bash
+root      9121  0.0  0.0      0     0 ?        I    21:43   0:00 [kworker/1:1-eve]
+dom133    9124  6.5  0.7 748116 118048 ?       Sl   21:43   0:10 xed /home/dom133/Studia/UKOS/ukos2020-21_16c/s22986-pj-Dominik-Kruszewski/Lesson_03/03
+root      9129  0.1  0.0      0     0 ?        I    21:43   0:00 [kworker/u8:2-ev]
+dom133    9163  0.0  0.3 4722696 55248 ?       Sl   21:43   0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1614 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133    9168  6.3  1.2 9052392 208176 ?      Sl   21:43   0:08 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --extension-process --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1615 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root      9186  0.0  0.0      0     0 ?        I    21:43   0:00 [kworker/0:0-eve]
+root      9187  0.0  0.0      0     0 ?        I    21:43   0:00 [kworker/0:3-eve]
+root      9229  0.0  0.0      0     0 ?        I    21:44   0:00 [kworker/2:1-eve]
+root      9236  0.0  0.0      0     0 ?        I    21:44   0:00 [kworker/3:1-eve]
+dom133    9267  0.0  0.0  40976  3568 pts/1    R+   21:45   0:00 ps aux
+root      9540  0.0  0.0      0     0 ?        I<   11:41   0:01 [kworker/2:2H-ev]
+dom133   13012  1.3  1.2 3450244 209036 ?      Sl   13:26   6:33 /usr/share/spotify/spotify
+dom133   13017  0.0  0.3 559940 61644 ?        S    13:26   0:00 /usr/share/spotify/spotify --type=zygote --no-sandbox --log-file=/usr/share/spotify/debug.log --log-severity=disable --product-version=Spotify/1.1.10.546 --lang=en-US
+dom133   13030  0.4  0.6 1305832 104004 ?      Sl   13:26   2:04 /usr/share/spotify/spotify --type=gpu-process --field-trial-handle=5072467407139920103,12155350010631339045,131072 --disable-features=ExtendedMouseButtons,NetworkService --no-sandbox --log-file=/usr/share/spotify/debug.log --log-severity=disable --product-version=Spotify/1.1.10.546 --lang=en-US --gpu-preferences=KAAAAAAAAAAgAAAgAQAAAAAAAAAAAGAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --log-file=/usr/share/spotify/debug.log --service-request-channel-token=15504205878275036700
+dom133   13058  0.9  1.3 1565988 219580 ?      Sl   13:26   4:41 /usr/share/spotify/spotify --type=renderer --no-sandbox --log-file=/usr/share/spotify/debug.log --field-trial-handle=5072467407139920103,12155350010631339045,131072 --disable-features=ExtendedMouseButtons,NetworkService --lang=pl --log-file=/usr/share/spotify/debug.log --log-severity=disable --product-version=Spotify/1.1.10.546 --disable-spell-checking --num-raster-threads=2 --enable-main-frame-before-activation --service-request-channel-token=16710477529331380680 --renderer-client-id=3 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+dom133   14556 16.7  2.5 17909012 421896 ?     Sl   13:34  82:18 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=427 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133   14851  0.0  0.0 364996  7756 ?        Sl   13:39   0:00 /usr/lib/gvfs/gvfsd-network --spawner :1.26 /org/gtk/gvfs/exec_spaw/3
+dom133   14883  0.0  0.0 375608  7692 ?        Sl   13:40   0:00 /usr/lib/gvfs/gvfsd-dnssd --spawner :1.26 /org/gtk/gvfs/exec_spaw/7
+dom133   14899  0.1  0.4 1038740 78272 ?       Sl   13:40   0:31 nemo
+dom133   15772  0.0  0.2 590692 39520 ?        Ssl  13:58   0:05 /usr/lib/gnome-terminal/gnome-terminal-server
+dom133   15779  0.0  0.0  25264  6428 pts/0    Ss   13:58   0:00 bash
+dom133   26089  0.0  0.1 555612 22568 ?        Sl   17:39   0:00 /usr/lib/gvfs/gvfsd-http --spawner :1.26 /org/gtk/gvfs/exec_spaw/8
+dom133   26095  0.0  0.0   4632   928 ?        S    17:39   0:00 sh -c /usr/lib/x86_64-linux-gnu/libproxy/0.4.14/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+dom133   26096  0.0  0.0 273376  6184 ?        Sl   17:39   0:00 /usr/lib/x86_64-linux-gnu/libproxy/0.4.14/pxgsettings org.gnome.system.proxy org.gnome.system.proxy.http org.gnome.system.proxy.https org.gnome.system.proxy.ftp org.gnome.system.proxy.socks
+root     27054  0.0  0.0      0     0 ?        I<   18:20   0:02 [kworker/0:2H-ev]
+dom133   30229  0.7  1.1 4838348 183676 ?      Sl   19:17   1:08 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1180 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+dom133   30297  1.0  1.9 13412000 319776 ?     Sl   19:18   1:30 /opt/google/chrome/chrome --type=renderer --field-trial-handle=12316635030600589220,10003969397721753752,131072 --lang=pl --disable-client-side-phishing-detection --origin-trial-disabled-features=SecurePaymentConfirmation --num-raster-threads=2 --enable-main-frame-before-activation --renderer-client-id=1185 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100
+root     32246  0.0  0.0  17404  2012 tty2     Ss+  19:30   0:00 /sbin/agetty -o -p -- \u --noclear tty2 linux
+root     32273  0.0  0.0  17404  1920 tty3     Ss+  19:30   0:00 /sbin/agetty -o -p -- \u --noclear tty3 linux
+root     32274  0.0  0.0  17404  1932 tty4     Ss+  19:30   0:00 /sbin/agetty -o -p -- \u --noclear tty4 linux
+root     32276  0.0  0.0  17404  1868 tty5     Ss+  19:30   0:00 /sbin/agetty -o -p -- \u --noclear tty5 linux
+root     32277  0.0  0.0  17404  1932 tty6     Ss+  19:30   0:00 /sbin/agetty -o -p -- \u --noclear tty6 linux
+
+2.
+
+1.Uruchomiłem  gedit użwyając polecenia gedit
+
+2.Używając polecenia ps | grep gpedit otrzymeje jego pid: 
+2349 pts/1    Tl     0:00 gedit
+
+3.W terminalu używam komendy kill 2349 aby wyłączyć edytor tekstu;
+
+4.działanie killall:
+killall sends a signal to all processes running any of the specified commands.
+
+
+3.
+
+1.Urucahmiam polecenie cat cat
+2.Używam kombinacji ctrl+c:
+ctrl+c przerywa proces
+
+1.Uruchamiam polecenie cat >wynik.txt
+2.Wpisuje tekst bez entera
+3.Używam kombinacji ctrl+c
+4 plik wynik.txt jest pusty  
+
+
+1.Uruchamiam polecenie cat >wynik2.txt
+2.Wpisuje tekst bez entera
+3.Używam kombinacji ctrl+d
+4.plik wynik.txt zawiera napis witaj
+
+4.
+
+1.Urucahmiam polecenie gedit
+2.Naciskam kombinację ctrl+z
+3.Program gedit przestaje odpowiadać
+
+1. komenda bg odwiesiła gedit
+2. fg a potem ctrl+c wyłaczyło gedit
+
+1. gedit& otwier proces w tle
+2. komenda jobs:
+[1]+  Running                 gedit &
+
+3.fg 1 przeniosło gedit na pierwszy plan.
