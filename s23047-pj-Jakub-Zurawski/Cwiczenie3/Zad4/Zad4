@@ -1,0 +1,9 @@
+Nie moglem zainstalowac gimpa wiec zrobilem to zadanie na edytorze tekstu. Wpisalem w konsoli gedit i powpisywalem cos w edytorze. Skrótem klawiszowy ctrl + z zatrzymalem program cos daje efekt zawieszenia sie programu badz brak odpowiedzi.
+komenda "bg" wyswietlila na ekranie z powrotem edytor tekstu i znowu mozna bylo w nim pisac.
+komenda "fg" 
+ubuntu@bss-ubu1804:/$ fg
+gedit
+skrotem klawiszowy ctrl + c zatrzymalem proces co skutkowalo zamknieciem programu.
+uzylem komendy oraz "geany &"  "gedit &"  uruchomily sie dwa programy. poleceniem "jobs" wyswietlimy mi sie aktualnie zadania przeniesione do tla. Sprawdzilem rowniez tym poleceniem ich numer procesu.
+poleceniem "fg" probowalem przeniesc gedit na pierwszy plan ale tylko go zatrzymalo [2] running gedit & --> [2] stopped gedit &. "bg" przywrocilo running.
+ b

@@ -1,0 +1,3 @@
+Uruchomilem Text Editor, za pomoca komendy "ps -x" wyszukalem go w procesach i znalazlem jego PID(nazwa procesu gedit).  Za pomoca komendy "kill 1603" zamknąłem edytor tekstu.
+Komenda "killall shell" shell: no process found.
+"Kill" nie zadziala na wszystkie procesu. root       281  0.0  0.0      0     0 ?        I<   Dec08   0:00 [iprt-VBoxWQueue], bash: kill: (281) - Operation not permitted.

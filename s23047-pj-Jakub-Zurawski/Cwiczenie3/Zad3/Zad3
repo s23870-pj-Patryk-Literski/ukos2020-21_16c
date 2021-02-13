@@ -1,0 +1,3 @@
+skrót klawiszowy ctrl + c zatrzymal aktualny process/wykonywana komende.
+Nie widze jakiejs znaczacej roznicy miedzy ctrl + d, a ctrl + c. 
+Ale wydaje mi sie ze ctrl+d zakonczy proces w bezpieczniejszy dla procesu sposób. Nie do konca w stylu ze zapisze zmiany ale nie bedzie to gwaltowane zakoncznie.
