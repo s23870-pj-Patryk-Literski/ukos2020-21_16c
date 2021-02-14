@@ -1,0 +1,35 @@
+Zad.1
+
+Utworzenie kukułczego jaja jest niemożliwe 
+jeśli użytkownik nie nadał wszystkich uprawnien wszystkim użytkownikom 
+dzieki komendzie chmod 777
+
+Zad.2 
+
+Żeby odebrać wszystkie uprawnienia to trzeba wpisać komende chmod 000
+
+Jeśli mam dostep do podkatalogu XYZ ale nie ma dostępu do katalogu ABC to nie moge wjeść do podkatalogu XYZ 
+
+ponieważ nie mam  dotępu do katalugu ABC a to sprawia że nie mam automatycznie dostępu do podkatalgu XYZ.
+
+Zad.3
+
+Jeśli wpiszę echo treść_kominkatu > plik to stworzy sie plik z treścia ,,treść_komunikatu,,
+
+>    napisuje plik
+
+>> dołacza nową treść
+
+W drugim terminalu przy użyciu komendy tail -f plik 
+wyświetla mi się treść którą dołączyłem do pliku używając komendy
+
+echo test >> plik
+
+w pierwszym terminalu.
+
+Zad.5
+
+ Po wpisaniu umask otrzymałem wartość 0002
+
+  wiec jeśli utworze katalog to dostanie on autmoatycznie uprwanienia 755 
+  a jesli utworze plik to dotanie on uprawnienia 644

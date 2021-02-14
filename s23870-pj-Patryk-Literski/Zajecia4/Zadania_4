@@ -1,0 +1,60 @@
+Zad.1
+  
+Aby wejść do katalogu ala ścieżka relatywną należy wpisać koemnde :
+
+cd ../../../kot/ma/ale
+ 
+Aby wejść do katalogu ala scieżka absolutną należy wpisać komende :
+
+cd /home/ubuntu/kropa/kot/ma/ale
+
+
+Zad.2
+  
+Żeby utworzyć poddrzewo katalogów należy wpisać komende :
+
+mkdir -p /home/ubuntu/kropa/kot/ma/ale/jan/kowalski
+
+Zad.3
+
+Aby przenieść katalog kota do katalogu i należy wpisać komende :
+
+mv /home/ubuntu/kropa/kot/ma/ale /home/ubuntu/kropa/ala/i
+
+
+Zad.4
+
+  Wpisujemy komende kill
+
+
+Zad.5
+  
+Wpisujemy komende ls  -la | grep al
+
+
+Zad 6
+  
+Wpisujemy komende chmod u=rwx,g=r,o=x   ala
+  
+
+Zad.7
+
+Wpisujemy komende ls  -la > plik
+
+
+Zad.8
+ 
+Zostało odebrane prawo do zapisu pliku.
+
+
+Zad.9
+
+Przy użyciu taba lub strzałki w górę ktróra przerzuca wcześniej wpisane komendy
+
+Zad.10
+
+Pierwszy sposób to wpisać nazwę programu i &
+
+Drugim sposobem jest wciśniecie ctrl+z po czym wpisanie komendy bg
+
+

@@ -1,0 +1,224 @@
+Zad.1
+
+Po wpisaniu komendy ls -a:
+             
+ Desktop     ListaPlikówZLiterkąD.txt  Public                     .vboxclient-display.pid      .xsession-errors
+..             Documents   .local                    .sudo_as_admin_successful  .vboxclient-draganddrop.pid  .xsession-errors.old
+.bash_history  Downloads   .mozilla                  .swt                       .vboxclient-seamless.pid
+.bash_logout   .eclipse    Music                     Templates                  Videos
+.bashrc        .gitconfig  .p2                       .thumbnails                .wget-hsts
+.cache         .gnupg      Pictures                  ukos2020-21_16c            .Xauthority
+.config        .lesshst    .profile                  .vboxclient-clipboard.pid  .xscreensaver
+
+
+1.3 Po wpisaniu komendy ls -a | grep D:
+
+Desktop
+Documents
+Downloads
+
+1.4 Po wpisaniu komendy ls -a | grep D > ListaPlkiowZLiterkaD.txt:
+
+Desktop
+Documents
+Downloads
+ListaPlikowZLiteraD.txt
+
+Zad.2
+
+Po wpisaniu komedy ps:
+ 
+  PID TTY          TIME CMD
+ 2037 pts/1    00:00:00 bash
+ 2057 pts/1    00:00:00 ps
+
+2.2 Po wpisaniu komendy ps -a:
+  
+ PID TTY          TIME CMD
+ 2083 pts/1    00:00:00 ps
+
+
+2.3 Po wpisaniu komendy ps x:
+ 
+ PID TTY      STAT   TIME COMMAND
+  632 ?        Ss     0:00 /lib/systemd/systemd --user
+  633 ?        S      0:00 (sd-pam)
+  644 ?        Ssl    0:00 /usr/bin/lxsession -s Lubuntu -e LXDE
+  659 ?        Ss     0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  693 ?        S      0:00 /usr/bin/VBoxClient --clipboard
+  694 ?        Sl     0:00 /usr/bin/VBoxClient --clipboard
+  704 ?        S      0:00 /usr/bin/VBoxClient --display
+  705 ?        S      0:00 /usr/bin/VBoxClient --display
+  709 ?        S      0:00 /usr/bin/VBoxClient --seamless
+  710 ?        Sl     0:00 /usr/bin/VBoxClient --seamless
+  714 ?        S      0:00 /usr/bin/VBoxClient --draganddrop
+  715 ?        Sl     0:12 /usr/bin/VBoxClient --draganddrop
+  731 ?        Ss     0:00 /usr/bin/ssh-agent /usr/bin/lxsession -s Lubuntu -e LXDE
+  736 ?        S      0:01 openbox --config-file /home/ubuntu/.config/openbox/lubuntu-rc.xml
+  740 ?        Sl     0:05 lxpanel --profile Lubuntu
+  743 ?        Sl     0:04 pcmanfm --desktop --profile lubuntu
+  744 ?        Sl     0:00 lxpolkit
+  755 ?        Sl     0:00 /usr/lib/menu-cache/menu-cached /run/user/1000/menu-cached-:0
+  762 ?        Ss     0:00 /usr/bin/ssh-agent -s
+  834 ?        Sl     0:18 lxterminal
+  915 ?        Sl     2:29 /usr/lib/firefox/firefox
+  985 ?        Sl     0:01 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 176301 -parentBuildID 201908140
+ 1006 ?        Sl     1:41 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 62 -prefMapSize 176301 -parentBuildID 20190814
+ 1329 ?        Sl     0:14 /usr/lib/firefox/firefox -contentproc -childID 6 -isForBrowser -prefsLen 11897 -prefMapSize 176301 -parentBuildID 20190
+ 1679 ?        Sl     0:00 /usr/lib/dconf/dconf-service
+ 1906 ?        Sl     0:29 gedit
+ 1973 ?        Sl     0:00 /usr/lib/firefox/firefox -contentproc -childID 7 -isForBrowser -prefsLen 11893 -prefMapSize 176301 -parentBuildID 20190
+ 2037 pts/1    Ss     0:00 bash
+ 2060 ?        Sl     0:00 /usr/lib/firefox/firefox -contentproc -childID 8 -isForBrowser -prefsLen 11893 -prefMapSize 176301 -parentBuildID 20190
+ 2085 pts/1    R+     0:00 ps x
+
+
+2.4  Po wpisaniu komendy ps aux:
+
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.4 159388  8696 ?        Ss   19:30   0:00 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    19:30   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        I<   19:30   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   19:30   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    19:30   0:00 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        I    19:30   0:00 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    19:30   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    19:30   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    19:30   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    19:30   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    19:30   0:00 [kdevtmpfs]
+root        14  0.0  0.0      0     0 ?        I<   19:30   0:00 [netns]
+root        15  0.0  0.0      0     0 ?        S    19:30   0:00 [rcu_tasks_kthre]
+root        16  0.0  0.0      0     0 ?        S    19:30   0:00 [kauditd]
+root        17  0.0  0.0      0     0 ?        S    19:30   0:00 [khungtaskd]
+root        18  0.0  0.0      0     0 ?        S    19:30   0:00 [oom_reaper]
+root        19  0.0  0.0      0     0 ?        I<   19:30   0:00 [writeback]
+root        20  0.0  0.0      0     0 ?        S    19:30   0:00 [kcompactd0]
+root        21  0.0  0.0      0     0 ?        SN   19:30   0:00 [ksmd]
+root        22  0.0  0.0      0     0 ?        SN   19:30   0:00 [khugepaged]
+root        23  0.0  0.0      0     0 ?        I<   19:30   0:00 [crypto]
+root        24  0.0  0.0      0     0 ?        I<   19:30   0:00 [kintegrityd]
+root        25  0.0  0.0      0     0 ?        I<   19:30   0:00 [kblockd]
+root        26  0.0  0.0      0     0 ?        I<   19:30   0:00 [ata_sff]
+root        27  0.0  0.0      0     0 ?        I<   19:30   0:00 [md]
+root        28  0.0  0.0      0     0 ?        I<   19:30   0:00 [edac-poller]
+root        29  0.0  0.0      0     0 ?        I<   19:30   0:00 [devfreq_wq]
+root        30  0.0  0.0      0     0 ?        I<   19:30   0:00 [watchdogd]
+root        32  0.0  0.0      0     0 ?        I    19:30   0:02 [kworker/0:1]
+root        34  0.0  0.0      0     0 ?        S    19:30   0:00 [kswapd0]
+root        35  0.0  0.0      0     0 ?        I<   19:30   0:00 [kworker/u3:0]
+root        36  0.0  0.0      0     0 ?        S    19:30   0:00 [ecryptfs-kthrea]
+root        78  0.0  0.0      0     0 ?        I<   19:30   0:00 [kthrotld]
+root        79  0.0  0.0      0     0 ?        I<   19:30   0:00 [acpi_thermal_pm]
+root        80  0.0  0.0      0     0 ?        S    19:30   0:00 [scsi_eh_0]
+root        81  0.0  0.0      0     0 ?        I<   19:30   0:00 [scsi_tmf_0]
+root        82  0.0  0.0      0     0 ?        S    19:30   0:00 [scsi_eh_1]
+root        83  0.0  0.0      0     0 ?        I<   19:30   0:00 [scsi_tmf_1]
+root        89  0.0  0.0      0     0 ?        I<   19:30   0:00 [ipv6_addrconf]
+root        98  0.0  0.0      0     0 ?        I<   19:30   0:00 [kstrp]
+root       115  0.0  0.0      0     0 ?        I<   19:30   0:00 [charger_manager]
+root       162  0.0  0.0      0     0 ?        I    19:30   0:00 [kworker/0:2]
+root       171  0.0  0.0      0     0 ?        I<   19:30   0:00 [kworker/0:1H]
+root       172  0.0  0.0      0     0 ?        S    19:30   0:00 [scsi_eh_2]
+root       173  0.0  0.0      0     0 ?        I<   19:30   0:00 [scsi_tmf_2]
+root       174  0.0  0.0      0     0 ?        S    19:30   0:00 [scsi_eh_3]
+root       175  0.0  0.0      0     0 ?        I<   19:30   0:00 [scsi_tmf_3]
+root       176  0.0  0.0      0     0 ?        S    19:30   0:00 [scsi_eh_4]
+root       177  0.0  0.0      0     0 ?        I<   19:30   0:00 [scsi_tmf_4]
+root       201  0.0  0.0      0     0 ?        S    19:30   0:00 [jbd2/sda1-8]
+root       202  0.0  0.0      0     0 ?        I<   19:30   0:00 [ext4-rsv-conver]
+root       237  0.0  0.6  94860 13404 ?        S<s  19:31   0:00 /lib/systemd/systemd-journald
+root       267  0.0  0.2  46548  5204 ?        Ss   19:31   0:00 /lib/systemd/systemd-udevd
+systemd+   292  0.0  0.2  80044  5260 ?        Ss   19:31   0:00 /lib/systemd/systemd-networkd
+root       297  0.0  0.0      0     0 ?        I<   19:31   0:00 [iprt-VBoxWQueue]
+systemd+   376  0.0  0.2  70760  6056 ?        Ss   19:31   0:00 /lib/systemd/systemd-resolved
+root       379  0.0  0.0      0     0 ?        I<   19:31   0:00 [ttm_swap]
+root       380  0.0  0.0      0     0 ?        S    19:31   0:00 [irq/18-vmwgfx]
+root       458  0.0  0.1  31320  3172 ?        Ss   19:31   0:00 /usr/sbin/cron -f
+message+   459  0.0  0.2  50332  4744 ?        Ss   19:31   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-a
+root       461  0.0  0.2  70608  5848 ?        Ss   19:31   0:00 /lib/systemd/systemd-logind
+root       464  0.0  0.8 170436 17424 ?        Ssl  19:31   0:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root       465  0.0  0.6 265344 12464 ?        Ss   19:31   0:00 /usr/sbin/nmbd --foreground --no-process-group
+root       468  0.0  0.3 287536  6992 ?        Ssl  19:31   0:00 /usr/lib/accountsservice/accounts-daemon
+syslog     469  0.0  0.2 263036  4316 ?        Ssl  19:31   0:00 /usr/sbin/rsyslogd -n
+root       487  0.0  0.0  16180  1916 tty1     Ss+  19:31   0:00 /sbin/agetty -o -p -- \u --noclear tty1 linux
+root       495  0.0  0.3 289184  6908 ?        Ssl  19:31   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root       506  0.0  1.0 356676 20588 ?        Ss   19:31   0:00 /usr/sbin/smbd --foreground --no-process-group
+root       508  0.0  0.3 344936  6160 ?        S    19:31   0:00 /usr/sbin/smbd --foreground --no-process-group
+root       509  0.0  0.2 344928  4848 ?        S    19:31   0:00 /usr/sbin/smbd --foreground --no-process-group
+root       510  0.0  0.3 356676  6944 ?        S    19:31   0:00 /usr/sbin/smbd --foreground --no-process-group
+root       580  0.0  0.0 131240   380 ?        S    19:31   0:00 VBoxClient --vmsvga
+root       581  0.0  0.0 131240   380 ?        S    19:31   0:00 VBoxClient --vmsvga
+root       586  0.0  0.3 364332  6892 ?        Ssl  19:31   0:00 /usr/sbin/lightdm
+root       606  0.0  0.1 248368  2624 ?        Sl   19:31   0:01 /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+root       615  0.6  5.7 398708 117084 tty7    Ssl+ 19:31   1:30 /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten 
+root       628  0.0  0.3 246396  6844 ?        Sl   19:31   0:00 lightdm --session-child 12 15
+ubuntu     632  0.0  0.3  76764  8000 ?        Ss   19:31   0:00 /lib/systemd/systemd --user
+ubuntu     633  0.0  0.1 111444  2072 ?        S    19:31   0:00 (sd-pam)
+ubuntu     644  0.0  0.6 355052 12900 ?        Ssl  19:31   0:00 /usr/bin/lxsession -s Lubuntu -e LXDE
+ubuntu     659  0.0  0.2  49896  4196 ?        Ss   19:31   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-
+ubuntu     693  0.0  0.0  51988   324 ?        S    19:31   0:00 /usr/bin/VBoxClient --clipboard
+ubuntu     694  0.0  0.2 120376  4300 ?        Sl   19:31   0:00 /usr/bin/VBoxClient --clipboard
+ubuntu     704  0.0  0.0  51988   324 ?        S    19:31   0:00 /usr/bin/VBoxClient --display
+ubuntu     705  0.0  0.1  52124  2908 ?        S    19:31   0:00 /usr/bin/VBoxClient --display
+ubuntu     709  0.0  0.0  51988   320 ?        S    19:31   0:00 /usr/bin/VBoxClient --seamless
+ubuntu     710  0.0  0.1 118172  2160 ?        Sl   19:31   0:00 /usr/bin/VBoxClient --seamless
+ubuntu     714  0.0  0.0  51988   324 ?        S    19:31   0:00 /usr/bin/VBoxClient --draganddrop
+ubuntu     715  0.0  0.1 118688  2392 ?        Sl   19:31   0:12 /usr/bin/VBoxClient --draganddrop
+ubuntu     731  0.0  0.0  11304   320 ?        Ss   19:31   0:00 /usr/bin/ssh-agent /usr/bin/lxsession -s Lubuntu -e LXDE
+ubuntu     736  0.0  1.0 239068 20440 ?        S    19:31   0:01 openbox --config-file /home/ubuntu/.config/openbox/lubuntu-rc.xml
+ubuntu     740  0.0  1.6 662488 33828 ?        Sl   19:31   0:05 lxpanel --profile Lubuntu
+ubuntu     743  0.0  2.2 617900 45908 ?        Sl   19:31   0:04 pcmanfm --desktop --profile lubuntu
+ubuntu     744  0.0  0.5 297248 12036 ?        Sl   19:31   0:00 lxpolkit
+ubuntu     755  0.0  0.2 113884  4756 ?        Sl   19:31   0:00 /usr/lib/menu-cache/menu-cached /run/user/1000/menu-cached-:0
+ubuntu     762  0.0  0.0  11304   320 ?        Ss   19:31   0:00 /usr/bin/ssh-agent -s
+ubuntu     834  0.1  1.7 468552 34972 ?        Sl   20:11   0:17 lxterminal
+ubuntu     915  1.2 15.0 3134156 307392 ?      Sl   20:22   2:21 /usr/lib/firefox/firefox
+ubuntu     985  0.0  5.0 2533508 103084 ?      Sl   20:22   0:01 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefM
+ubuntu    1006  0.9 12.7 3196816 259720 ?      Sl   20:22   1:40 /usr/lib/firefox/firefox -contentproc -childID 2 -isForBrowser -prefsLen 62 -pref
+ubuntu    1329  0.0  9.5 2792844 194356 ?      Sl   20:42   0:09 /usr/lib/firefox/firefox -contentproc -childID 6 -isForBrowser -prefsLen 11897 -p
+ubuntu    1679  0.0  0.2 187776  5076 ?        Sl   22:15   0:00 /usr/lib/dconf/dconf-service
+ubuntu    1838  0.0  0.2  22656  5124 pts/0    Ss+  22:53   0:00 bash
+ubuntu    1906  1.6  2.0 858836 42068 ?        Sl   22:58   0:24 gedit
+root      1959  0.0  0.0      0     0 ?        I    23:07   0:00 [kworker/u2:0]
+ubuntu    1973  0.0  3.5 2511284 72612 ?       Sl   23:12   0:00 /usr/lib/firefox/firefox -contentproc -childID 7 -isForBrowser -prefsLen 11893 -p
+root      2002  0.0  0.0      0     0 ?        I    23:13   0:00 [kworker/u2:1]
+root      2021  0.0  0.0      0     0 ?        I    23:22   0:00 [kworker/u2:2]
+ubuntu    2024  0.1  0.2  22656  5092 pts/1    Ss   23:23   0:00 bash
+ubuntu    2034  0.0  0.1  37364  3244 pts/1    R+   23:23   0:00 ps aux
+
+
+
+Zad.3
+
+Uruchomiłem  edytor tekstowy
+
+3.2 PID edytora tekstowego :
+
+1906 pts/1    Tl     0:00 gedit
+
+3.3 
+
+Po wpisaniu komendy kill 1906 edytor się wyłącza.
+
+Zad.4
+
+killall wysyła sygnał do wszystkich procesów wykonujących którekolwiek z określonych poleceń.
+
+Zad.5
+ 
+ctrl+c przerywa proces
+
+5.2
+ plik wynik.txt jest pusty  
+
+5.3 
+plik wynik.txt zawiera napis witaj
+
+Zad.6
+
+Program gedit po naciśnieciu ctrl+z nie odpowiada
+
+Zad.7
+
+komenda bg odwiesiła gedit

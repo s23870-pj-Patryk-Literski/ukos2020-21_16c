@@ -1,0 +1,50 @@
+
+Po wpisaniu #include <stdio.h> zmienił sie kolor na różowy.
+
+int i char ma kolor zielony.
+
+return i for kolor czerwony.
+
+ctrl+spacja powinno automatycznie  uzupełnić komendę  w gedicie nie chciało działać natomiast  w geany  tak.
+
+W nano <stdio.h> na zielono i ctrl+spacja też nie działa.
+
+Po wpisaniu komendy:  diff nowy.c program.c
+
+1,43d0
+< #include <stdio.h>
+< #include <stdlib.h>
+< 
+< int main(int argc, char **argv)
+< {
+<   for(i=0; i<10; i++)
+<    {
+<    printf("+---------------+\n"); 
+<    printf("#               #\n",i);
+<    printf("#    Liczę: %d  #\n");
+<    printf("#               #\n"); 
+<    printf("+---------------+\n");
+<    }
+<   return 0;
+< }
+< 
+
+
+Po wpisaniu komendy  diff -y nowy.c program.c
+
+
+#include <stdio.h>					      <
+#include <stdlib.h>					      <
+							                              <
+int main(int argc, char **argv                       <
+{							                               <
+  for(i=0; i<10; i++)					               <
+   {							                               < 
+   printf("+---------------+\n"); 			               <
+   printf("#               #\n",i);			               <
+   printf("#    Liczę: %d  #\n");			       <
+   printf("#               #\n"); 			               <
+   printf("+---------------+\n");			               <
+   }							                               <
+  return 0;						                       <
+}							                               <
