@@ -1,0 +1,29 @@
+1. Aby przejść do katalogu ale możemy użyć tych poleceń:
+  ścieżka względna: cd ../../../kot/ma/ale
+  scieżka bezwzględna: cd /home/ubuntu/kropa/kot/ma/ale
+
+2. Aby utworzyć poddrzewo katalogów jan/kowalski w katalogu ale używamy następującej komendy:
+  mkdir -p /home/dom133/kropa/kot/ma/ale/jan/kowalski
+
+3. Aby przenieść katalog ala do katalogu i używamy następującej komendy
+  mv /home/ubuntu/kropa/kot/ma/ale /home/dom133/kropa/ala/i
+
+4. Aby zamknąć program który nie odpowaida na Ctrl+C możemy użyć polecenia kill
+
+5. Aby wypisać wszystkie pliki zaczynające się na al w bierzącym katalogu używamy polecenia: 
+  ls -la | grep al
+
+6. Nadaj uprawienia do katalogu ala tak aby: każdy mógł do niego wejść, tylko grupa mogła wyściwtlic co w nim jest, własciciel ma pełne prawa.
+  notacja ósemkowa: chmod 751 ala
+  notacja symboliczna: chmod u=rwx,g=r,o=x ala
+
+7. Aby utworzyć plik z listą plików z bierzącego katalogu używamy polecenia: 
+  ls -la > plik
+
+8. Mogły się stać dwa warianty:
+    - Nie ma miejsca na dysku na stworzenie pliku.
+    - Zostało odebrane prawo do zapisu pliku.
+
+9. Przy użyciu strzałki w górę można wstawić wcześniej użyte komendy
+
+10. Aby wykonywać program i nie blokować terminalu możemy użyć polecenia: nazwa_programu &

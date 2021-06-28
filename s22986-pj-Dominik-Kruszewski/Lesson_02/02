@@ -1,0 +1,20 @@
+1. Jako zwykły użytkownik nie możemy usuwać plików i katalogów innych użytkowników. Kukułcze jajo jest jedynie możliwe gdy ktoś ustawi 777 dla katalogó co nie jest pożądane ponieważ każdy może modyfikować taki katalog i może go także usunąć.
+
+2. Aby usunąć wszystkie uprawnienia używam komendy chmod 000
+Jeśli nie mamy dostępu do ABC ale mamy dostęp do XYZ to nie możemy wejśc do katalogu ABC/XYZ jeśli nie mamy dostępu do ABC. Dzieję się tak ponieważ kiedy odbieramy sobie dostęp do katalogu ABC tracimy prawa dostępu do podkatalogów.
+
+3. Jeśli użyję komendy echo treść_komunikatu > plik to przekieruje standardowe wyjście do pliku. Stworzy się plik z zawartością "treść_komunikatu". Znak > nadpisuje plik, jeśli użyjemy >> to do istniejącego pliku dołączamy nowe dane.
+Po otworzeniu drugiego terminala i użyciu komendy tail -f plik, wyświetla mi się tekst które dołączam do pliku używająć polecenia echo test >> plik na pierwszym terminalu.
+
+4. Na serwerze szufaladni utworzyłem katalog public.html a wnim plik index.html o zawartosci:
+<html>
+<body>
+<h2>s22986 - Witaj przyjacielu<h2>
+</Body>
+</Html>
+http://szuflandia.pjwstk.edu.pl/~s22986/index.html otworzyłem swoja stronę domową.
+Aby wyświetlić strone trzeba mieć prawo do odczytu read.
+
+5. Gdy użyem polecenia umask otrzymałem wartość 0002.
+Oznacza to, że przy tworzeniu katalogu otrzyma on prawa:
+drwxrwxr-x 

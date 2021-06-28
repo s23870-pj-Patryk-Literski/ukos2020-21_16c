@@ -7,3 +7,7 @@ Nauczyłem się dzisiaj co to jest kukułcze jajo, jak ustawić uprawnienia, poz
 
 2020.11.21
 Drogi pamiętniczku, na dzisiejszych zajęciach poznałem magię związana z procesami. Nauczyłem się, co to są strumienie, jak je przekierowywać i to jak sprawdzić dany identyfikator procesu. Nauczyłem się także jak operować procesami w taki sposób, by móc wstrzymywać dany program, a po chwili przywracać go do żywych. Dowiedziałem się, że istnieją terminalowe przeglądarki webowe. Fajna sprawa, tylko trochę ciężka w nawigacji.
+
+2021.02.13
+Na ostatnich zajęciach popracowałem trochę z PowerShellem. PowerShell jest potężnym narzędziem i pozwala na więcej niż zwykły cmd. Jest on także trochę skomplikowany i nie zrozumiały pod niektórymi wzgledami. Jest i tak bardziej intuicyjny niż zwykły terminal w windowsie.
+Z powershella nie musieliśmy opisać wszystkich poleceń, wypisałem tylko te które zapadły mi w pamięć. Ogólnie ps używam na linuxie i działa bardzo przyzwoicie. Nie które komendy działają tylko na windowsie ale to nie stoi na przeskodzie by potrenować ps na linuxie.

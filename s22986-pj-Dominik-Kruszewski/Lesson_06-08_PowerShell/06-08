@@ -1,0 +1,18 @@
+Tutaj z uwagi że nie trzeba było opisać wysztkich poleceń opiszę tylko kilka.
+
+1. Import-Module BitsTransfer - Polecenie to ładuje moduł bitstransfer
+
+2. By wyświetlić listę komend w module bitstransfer użyję polecenia: Get-Command -Module BitsTransfer
+
+3. Start-BitsTransfer -Source http://szuflandia.pjwstk.edu.pl/pub/repo/java/lubuntu_13_04_v02.zip -Destination D:\ -Credential $cred -Authentication Negotiate
+Tym polecenie możemy ściągać pliki z internetu używając modułu bitstransfer. W moim przypadku ściągnełem plik GIF z śmiesznym kotem.
+
+4. Aby zobaczyć aktualnie wszytskie procesy pobierania możemy użyć polecenia: Get-BitsTransfer
+
+5. Aby uzyskać pobrany plik który jest w statusie transferred używamy polecenia Complete-BitsTransfer -BitsJob $job
+
+6. Aby zobaczyć wszytskie dyski w ps używamy polecenia: Get-PSDrive
+
+7. Aby zarządzać procesami możemu użyć WMI.
+
+8. Aby uzyskać listę dostępnych modółów używamy polecenia: Get-Module -ListAvailable 

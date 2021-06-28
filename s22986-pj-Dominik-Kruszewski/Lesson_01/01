@@ -1,0 +1,17 @@
+1. W środowisku Linux uruchamiam LXTerminal.
+2. Do wyświetlenia zawartości aktualnego katalogu używam polecenia ls.
+3. Do sprawdzenia gdzie się znajduję używam polecenia pwd. Jeśli jestem w katalogu domowy to w interfejsie raficznym wyświetla się znak ~/.
+4. cd ~/Desktop
+5. Do sprawdzenia gdzie się znajduje używam polecenia pwd. Otrzymam: /home/dom133/Desktop
+6. Aby wyświetlić zawartośc katalogu używam komendy ls.
+7. W interfejsie graficznym nie widzimy plików zaczynających się od kropki. Są to pliki domyślnie ukryte w interfejsie graficznym.
+8. Do wyświetlenia zawartości katalogu domowegu użyję ls ~/
+9. Aby przejść do katalogu Obrazy w katalogu domowym użyję komendy: cd ~/Obrazy
+10. Do sprawdzenia gdzie się znajduje używam polecenia pwd. Otrzymam: /home/dom133/Obrazy
+11. Polecenie cd ./././././ nie zadziała.
+12. Aby przejść do katalogu domowego użyję ścieżki cd /home/dom133
+13. Po próbie wykonania polecenia cd /root wyświetla się komunikat brak dostępu. Dzieję się tak ponieważ jest to folder domowy użytkownika root i zywkły użytkownik jakim jestem ja nie ma tam dostępu
+14. Użycie tej kombinacji powoduje przełączenie się na konsole pierwszą interfejsu graficznego tty1.
+
+Ogólnie temat nie przyprawił mi problemów. W linuxie czuję się jak ryba w wodzie. 
+
